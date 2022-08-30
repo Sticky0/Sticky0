@@ -13,8 +13,7 @@
 
    • <b>Discord:</b> Zeninツ#33662
    • <b>Discord:</b> <a href="https://tulant.x10.bz">Discord Server</a>
-   <widgetbot server="692539777958019103" channel="1000479273871740968" width="800" height="600"></widgetbot>
-            <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+
    
 
 <hr>
