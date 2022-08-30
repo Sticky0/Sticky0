@@ -1,5 +1,5 @@
 <img align='right' src="https://discord.c99.nl/widget/theme-1/568157479020527636.png"/>
-
+<br>
 
 ### 👋 Hola me llamo Zenin
 
@@ -7,7 +7,7 @@
 
 - 📚 Estoy actualmente estudiando, y aprendiendo diferentes tipos de lenguajes
 
-- 💼 Estos son algunos trabajos que he hecho <a href="https://nakiri.x10.mx">Discord Bot</a>, <a href="https://tulant.x10.bz">Discord Server</a>
+- 💼 Estos son algunos trabajos que he hecho <a href="https://nakiri.x10.mx">Discord Bot</a>, <a href="https://tulant.x10.bz">Discord Server</a>,<a href="https://bunsho.x10.mx">Debiant Based Terminal Text Editor</a>
 
 - 📩 <b>Como contactarme:</b>
 
