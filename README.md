@@ -1,18 +1,13 @@
-<img align='right' src="https://discord.c99.nl/widget/theme-4/454002606084194305.png"/>
+<img align='right' src="https://discord.c99.nl/widget/theme-1/568157479020527636.png"/>
 
 
-### |🇪🇸ES| 👋 Hola me llamo Aitor
+### 👋 Hola me llamo Zenin
 
-<!--
-**Aitooor/Aitooor** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
--->
-<b>¿Quieres saber sobre mi?</b>
+<b>Sobre mi</b>
 
-- 💼 Estoy actualmente trabajando en <b><a href="https://twitter.com/NasgarNetwork">Nasgar Network</a></b> y <b><a href="https://twitter.com/eternalnoficial">Eternal Network</a></b>
+- 📚 Estoy actualmente estudiando, y aprendiendo diferentes tipos de lenguajes
 
-- 📚 Estoy actualmente aprendiendo <b>Java</b> and <b>Web Fullstack</b>. Y quiero convertirme en <b>Programador Web Fullstack</b> ❤️
-
-- 🙋🏽‍♂️ Quiero ayudar con cualquier cosa
+ Quiero ayudar con cualquier cosa
 
 - 📩 <b>Como contactarme:</b>
 
