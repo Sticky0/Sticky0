@@ -14,7 +14,7 @@
    • <b>Discord:</b> Zeninツ#33662
 
 <hr>
-<a href="https://github.com/Aitooor">
+<a href="https://github.com/Zenin0">
   <img align="center" width="100%" src=https://github-readme-stats.vercel.app/api?username=Zenin0&hide=contribs,prs&show_icons=true&count_private=true&include_all_commits=true&theme=apprentice />
 </a>
 <hr>
