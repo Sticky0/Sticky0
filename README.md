@@ -1,5 +1,5 @@
-<img align='right' src="https://discord.c99.nl/widget/theme-1/568157479020527636.png"/>
-<br>
+<img align='right' src="https://discord.c99.nl/widget/theme-1/568157479020527636.png"/><br><br>
+
 
 ### 👋 Hola me llamo Zenin
 
