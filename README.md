@@ -11,7 +11,7 @@
 
 - 📩 <b>Como contactarme:</b>
 
-   • <b>Discord:</b> Zeninツ#33662
+   • <b>Discord:</b> Zeninツ#33662<br>
    • <b>Discord:</b> <a href="https://tulant.x10.bz">Discord Server</a>
 
    
