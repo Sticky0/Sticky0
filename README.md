@@ -12,7 +12,7 @@
 - 📩 <b>Como contactarme:</b>
 
    • <b>Discord:</b> Zeninツ#33662<br>
-   • <b>Discord Server:</b> <a target="_blank" href="https://tulant.x10.bz">Web Link</a>
+   • <b>Discord Server:</b> <a href="https://tulant.x10.bz">Web Link</a>
 
    
 
