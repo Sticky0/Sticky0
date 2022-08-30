@@ -7,7 +7,7 @@
 
 - 📚 Estoy actualmente estudiando, y aprendiendo diferentes tipos de lenguajes
 
-- 💼 Estos son algunos trabajos que he hecho <a href="nakiri.x10.mx">Discord Bot</a>,<a href="tulant.x10.bz">Discord Bot</a>
+- 💼 Estos son algunos trabajos que he hecho <a href="https://nakiri.x10.mx">Discord Bot</a>, <a href="https://tulant.x10.bz">Discord Server</a>
 
 - 📩 <b>Como contactarme:</b>
 
