@@ -1,4 +1,4 @@
-<img align='right' src="https://discord.c99.nl/widget/theme-3/568157479020527636.png"/><br><br>
+<img align='right' href="discordapp.com/users/568157479020527636" src="https://discord.c99.nl/widget/theme-3/568157479020527636.png"/>
 
 
 ### 👋 Hola me llamo Zenin
