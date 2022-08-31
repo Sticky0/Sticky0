@@ -14,10 +14,7 @@
 - **Web Sites:**<br>
     • *https://nakiri.x10.mx*<br>
     • *https://bunsho.x10.mx*
-- **Discord adresim: selim#1337** *[discord.gg/lynx](https://discord.gg/lynx)*
-
-- **Aklınıza takılan bir sorun olursa sosyal medya hesaplarımdan ulaşabilirsiniz**
-- 🐉 **Everything you can imagine is real -**
+- **Discord adresim: Zeninツ#3366** *[discord.gg/Tulant](https://discord.gg/GVHxGg3jpX)*
 
 [![Github Badge](https://img.shields.io/badge/-Github-000?style=quare&labelColor=000&logo=Github&logoColor=white&link=link)](https://github.com/selim1337) 
 [![Instagram Badge](https://img.shields.io/badge/-Instagram-C13584?style=flat-quare&labelColor=C13584&logo=instagram&logoColor=white&link=link)](https://instagram.com/selim1337_)
