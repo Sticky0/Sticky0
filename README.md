@@ -42,7 +42,7 @@ Aunque no tengo aún muchos conocimientos por el poco tiempo que llevo, siempre 
     <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="cpp" /> </a>
     <a href="https://www.shellscript.sh" target="_blank" rel="noreferrer"> <img src="https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="Shell Script" /> </a>
     <a href="https://docs.microsoft.com/es-es/powershell/" target="_blank" rel="noreferrer"> <img src="https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white" alt="PowerShell" /> </a>
-    <a href="[https://docs.microsoft.com/es-es/powershell/](https://httpd.apache.org)" target="_blank" rel="noreferrer"> <img src="https://img.shields.io/badge/apache-%23D42029.svg?style=for-the-badge&logo=apache&logoColor=white" alt="Apache" /> </a>
+    <a href="https://httpd.apache.org" target="_blank" rel="noreferrer"> <img src="https://img.shields.io/badge/apache-%23D42029.svg?style=for-the-badge&logo=apache&logoColor=white" alt="Apache" /> </a>
 </p>
 
 ### 𝘎𝘪𝘵𝘩𝘶𝘣 𝘚𝘵𝘢𝘵𝘶𝘴
