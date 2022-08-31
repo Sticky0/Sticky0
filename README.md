@@ -1,7 +1,10 @@
 <a href="https://discordapp.com/users/568157479020527636"><img align='right' src="https://discord.c99.nl/widget/theme-3/568157479020527636.png"/></a>
 
 
-### 👋 Hola me llamo Isaac
+<img
+            src="https://readme-typing-svg.herokuapp.com/?size=15&width=280&lines=Hola+me+llamo+Isaac+💻"
+            alt="l33t community"
+        />
 
 <b>Sobre mi</b>
 
