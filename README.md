@@ -51,8 +51,8 @@
     <img src='https://github-readme-stats.vercel.app/api?username=Zenin0&count_private=true&include_all_commits=true&show_icons=true&theme=gotham&hide_border=true&line_height=27'/>
     <img src='https://github-readme-stats.vercel.app/api/top-langs/?username=Zenin0&show_icons=true&hide=php,html,typescript,css,markdown,python&theme=gotham&line_height=27&hide_border=true'/>
 
-<img height="160" class =“right” title="" src="https://github-readme-stats.vercel.app/api/pin/?username=Zenin0&repo=Bunsho-0.1&theme=gotham" alt="ZeninPins">
-<img height="160" class =“right” title="" src="https://github-readme-stats.vercel.app/api/pin/?username=Zenin0&repo=Nakiri-Discord-Bot&theme=gotham" alt="ZeninPins">
+<a href="https://github.com/Zenin0/Bunsho-0.1"><img height="160" class =“right” title="" src="https://github-readme-stats.vercel.app/api/pin/?username=Zenin0&repo=Bunsho-0.1&theme=gotham" alt="ZeninPins"></a>
+<a href="https://github.com/Zenin0/Nakiri-Discord-Bot"><img height="160" class =“right” title="" src="https://github-readme-stats.vercel.app/api/pin/?username=Zenin0&repo=Nakiri-Discord-Bot&theme=gotham" alt="ZeninPins"></a>
 </p>
 <p align="center"><img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=60&section=footer" alt="l33t community"/></p>
  
