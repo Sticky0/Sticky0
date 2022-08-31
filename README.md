@@ -10,11 +10,10 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 </p> 
 
-- **Selam dostlar ben Selim 18 yaşındayım**
-- **4 Yıldır yazılım ve kodlama ile uğraşıyorum. [_html, php, javascript, css, python, C++ _]**
-- **Web Sitem:**
-- *https://selim1337.vercel.app/*
-- *https://selim1337.github.io/*
+- **Isaac Sanz 17 años **
+- **Web Sites:**
+- *https://nakiri.x10.mx*
+- *https://bunsho.x10.mx*
 - **Discord adresim: selim#1337** *[discord.gg/lynx](https://discord.gg/lynx)*
 
 - **Aklınıza takılan bir sorun olursa sosyal medya hesaplarımdan ulaşabilirsiniz**
