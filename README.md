@@ -30,8 +30,7 @@
 ### 𝘊𝘰𝘥𝘪𝘯𝘨
 
 <hr>
-Aunque no tengo aún muchos conocimientos por el poco tiempo que llevo, siempre estoy intentando aprender, ademas
-estos son con los que mejor me manejo y con los que he trabajado
+Aunque no tengo aún muchos conocimientos por el poco tiempo que llevo, siempre estoy intentando aprender
 <br><br>
 
 
