@@ -2,7 +2,7 @@
 <p align="center">
     <a href="https://github.com/Zenin0" target="_blank">
         <img
-            src="https://readme-typing-svg.herokuapp.com/?size=15&width=280&lines=++Coded+by+Isaac+Sanz+🧑🏼‍💻"
+            src="https://readme-typing-svg.herokuapp.com/?size=15&width=280&lines=C𝙹↸ᒷ↸ ʖ|| iᓭᔑᔑᓵ sᔑリ⨅🧑🏼‍💻"
             alt="l33t community"
         />
     </a>
