@@ -10,10 +10,6 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 </p> 
 
-### 𝘈𝘣𝘰𝘶𝘵
-
-<hr>
-
 - **Isaac Sanz 17 años「21/10/2004」**
 - **Sitios Web:**<br>
     • *https://www.nakiri.x10.mx* 「Discord Bot」<br>
