@@ -31,8 +31,6 @@
     <a href="https://www.w3schools.com/c/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="C" width="40" height="40"/> </a>
     <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="css3" width="40" height="40"/> </a>
 </p>
-<br><br>
-
 ### Discord 
 <br>
 
@@ -44,8 +42,6 @@
         />
     </a>      
 </p>
-
-<br><br>
 ### GitHub Stats
 <p align = 'center'>
     <img src='https://github-readme-streak-stats.herokuapp.com/?user=Zenin0&theme=gotham&hide_border=true'>
