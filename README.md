@@ -16,9 +16,9 @@
 
 - **Isaac Sanz 17 años「21/10/2004」** 「」
 - **Sitios Web:**<br>
-    • *https://www.nakiri.x10.mx*「Discord Bot」<br>
-    • *https://www.tulant.x10.bz*「Discord Server」<br>
-    • *https://www.bunsho.x10.mx「Text Editor」*
+    • *https://www.nakiri.x10.mx* 「Discord Bot」<br>
+    • *https://www.tulant.x10.bz* 「Discord Server」<br>
+    • *https://www.bunsho.x10.mx* 「Editor de Texto」
 
 [![Github Badge](https://img.shields.io/badge/-Github-000?style=quare&labelColor=000&logo=Github&logoColor=white&link=link)](https://github.com/Zenin0) 
 [![Instagram Badge](https://img.shields.io/badge/-Instagram-C13584?style=flat-quare&labelColor=C13584&logo=instagram&logoColor=white&link=link)](https://instagram.com/Isaac__sg)
