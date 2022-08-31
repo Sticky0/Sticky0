@@ -30,7 +30,7 @@
 ### 𝘊𝘰𝘥𝘪𝘯𝘨
 
 <hr>
-Aunque no tengo aún muchos conocimientos por el poco tiempo que llevo, siempre estoy intentando aprender
+Algunos lenguajes con los que estoy un poco familiarizado
 <br><br>
 
 [![HTML Badge](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)](https://www.w3.org/html/g)
