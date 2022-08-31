@@ -23,7 +23,7 @@
 [![Spotify Badge](https://img.shields.io/badge/-Spotify-1ED760?style=flat-quare&labelColor=1ED760&logo=spotify&logoColor=white&link=link)](https://open.spotify.com/user/cfeabgzyulqdxjtszqm9qrz8p)
 
 
-### Lenguajes y herramientas 🔧
+### 𝘊𝘰𝘥𝘪𝘯𝘨 
 <p align="left">
     <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a>
     <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a>
@@ -31,13 +31,9 @@
     <a href="https://www.w3schools.com/c/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="C" width="40" height="40"/> </a>
     <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="css3" width="40" height="40"/> </a>
 </p>
-### Repositorios Pineados
-<a href="https://github.com/Zenin0/tailwindcss-v2-dark-mode-template">
-  <img align="center" style="margin:0.5rem" src="https://github-readme-stats.vercel.app/api/pin/?username=braydoncoyer&repo=tailwindcss-v2-dark-mode-template&title_color=ffffff&text_color=c9cacc&icon_color=4AB197&bg_color=1A2B34" />
-</a>
 
 
-### Discord
+### 𝘋𝘪𝘴𝘤𝘰𝘳𝘥
 
 <p align="center">
     <a href="https://discord.com/users/568157479020527636" target="_blank">
@@ -49,7 +45,7 @@
 </p>
 
 
-### GitHub Stats
+### 𝘎𝘪𝘵𝘩𝘶𝘣 𝘚𝘵𝘢𝘵𝘶𝘴
 
 <p align = 'center'>
     <img src='https://github-readme-streak-stats.herokuapp.com/?user=Zenin0&theme=gotham&hide_border=true'>
