@@ -12,8 +12,8 @@
 
 - **Isaac Sanz 17 años**
 - **Web Sites:**
-- *https://nakiri.x10.mx*
-- *https://bunsho.x10.mx*
+    • *https://nakiri.x10.mx*
+    • *https://bunsho.x10.mx*
 - **Discord adresim: selim#1337** *[discord.gg/lynx](https://discord.gg/lynx)*
 
 - **Aklınıza takılan bir sorun olursa sosyal medya hesaplarımdan ulaşabilirsiniz**
