@@ -1,7 +1,7 @@
 
 <p align="center">
     <a href="https://github.com/Zenin0" target="_blank">
-        <img src="https://readme-typing-svg.herokuapp.com/?size=15&width=300&lines=int%20main()%20{cout%20<<%20%27Isaac%20Sanz%27;return%200}" alt="Zenin0"/><br>
+        <img src="https://readme-typing-svg.herokuapp.com/?size=15&width=300&lines=int%20main()%20{cout%20<<%20%27Isaac%20Sanz%27}" alt="Zenin0"/><br>
     </a>
     
 </p>
