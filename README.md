@@ -11,10 +11,11 @@
 </p> 
 
 - **Isaac Sanz 17 años「21/10/2004」**
-- **Sitios Web:**<br>
+- **Sitios Web/Projectos:**<br>
     • *https://www.nakiri.x10.mx* 「Discord Bot」<br>
     • *https://www.tulant.x10.bz* 「Discord Server」<br>
     • *https://www.bunsho.x10.mx* 「Editor de Texto」
+
     
 - **Discord: Zeninツ#3366**
 
