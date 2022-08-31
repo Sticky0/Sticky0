@@ -32,9 +32,9 @@
 <br>
 
 <p align="center">
-    <a href="https://discord.com/users/541303073962950657" target="_blank">
+    <a href="https://discord.com/users/568157479020527636" target="_blank">
         <img
-            src="https://discord.c99.nl/widget/theme-3/546303073962950657.png"
+            src="https://discord.c99.nl/widget/theme-3/568157479020527636.png"
             alt="l33t community"
         />
     </a>      
