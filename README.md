@@ -1,14 +1,19 @@
-<p align="center">
+
+<p align="left">
     <a href="https://github.com/Zenin0" target="_blank">
         <img
             src="https://readme-typing-svg.herokuapp.com/?size=15&width=280&lines=++Coded+by+Isaac+Sanz+🧑🏼‍💻"
             alt="l33t community"
         />
     </a>
+    
 </p>
+
 <p>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-</p> 
+</p>
+
+<p align="right"><a href="https://discord.com/users/568157479020527636" target="_blank"><img src="https://discord.c99.nl/widget/theme-3/568157479020527636.png"alt="l33t community"/></a></p>
 
 - **Isaac Sanz 17 años「21/10/2004」**
 - **Sitios Web/Projectos:**<br>
@@ -35,25 +40,6 @@
     <a href="https://www.w3schools.com/c/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="C" width="40" height="40"/> </a>
     <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="css3" width="40" height="40"/> </a>
 </p>
-
-### 𝘋𝘪𝘴𝘤𝘰𝘳𝘥 & 𝘚𝘱𝘰𝘵𝘪𝘧𝘺
-
-<hr>
-<p align="center">
-    <a href="https://discord.com/users/568157479020527636" target="_blank">
-        <img
-            src="https://discord.c99.nl/widget/theme-3/568157479020527636.png"
-            alt="l33t community"
-        />
-    </a> <br><br>
-    <a href="https://discord.com/users/568157479020527636" target="_blank">
-        <img
-            src="https://spotify-recently-played-readme.vercel.app/api?user=cfeabgzyulqdxjtszqm9qrz8p&count=1"
-            alt="l33t community"
-        />
-    </a>
-</p>
-
 
 ### 𝘎𝘪𝘵𝘩𝘶𝘣 𝘚𝘵𝘢𝘵𝘶𝘴
 
