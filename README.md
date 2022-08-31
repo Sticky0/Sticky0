@@ -13,6 +13,7 @@
 - **Isaac Sanz 17 años**
 - **Web Sites:**<br>
     • *https://nakiri.x10.mx*<br>
+    • *https://tulant.x10.bz*<br>
     • *https://bunsho.x10.mx*
 - **Discord adresim: Zeninツ#3366** *[discord.gg/Tulant](https://discord.gg/GVHxGg3jpX)*
 
