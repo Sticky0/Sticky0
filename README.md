@@ -2,7 +2,7 @@
 
 
 <p align="center">
-    <a href="https://selim1337.github.io" target="_blank">
+    <a href="https://tulant.x10.bz" target="_blank">
         <img
             src="https://readme-typing-svg.herokuapp.com/?size=15&width=280&lines=Hola+me+llamo+Isaac+💻"
             alt="l33t community"
