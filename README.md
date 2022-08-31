@@ -1,5 +1,5 @@
 <p align="center">
-    <a href="https://tulant.x10.bz" target="_blank">
+    <a href="https://github.com/Zenin0" target="_blank">
         <img
             src="https://readme-typing-svg.herokuapp.com/?size=15&width=280&lines=++Coded+by+Isaac+Sanz+🧑🏼‍💻"
             alt="l33t community"
