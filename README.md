@@ -33,9 +33,8 @@
 
 
 ### 𝘋𝘪𝘴𝘤𝘰𝘳𝘥
-
+**Discord: Zeninツ#3366**<br>*[discord.gg/Tulant](https://discord.gg/GVHxGg3jpX)*
 <p align="center">
-    **Discord: Zeninツ#3366** *[discord.gg/Tulant](https://discord.gg/GVHxGg3jpX)*
     <a href="https://discord.com/users/568157479020527636" target="_blank">
         <img
             src="https://discord.c99.nl/widget/theme-3/568157479020527636.png"
