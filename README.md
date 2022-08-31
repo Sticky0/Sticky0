@@ -24,6 +24,7 @@
 [![Discord Badge](https://img.shields.io/badge/-Discord-5865F2?style=flat-quare&labelColor=5865F2&logo=discord&logoColor=white&link=link)](https://discord.gg/GVHxGg3jpX)
 [![Spotify Badge](https://img.shields.io/badge/-Spotify-1ED760?style=flat-quare&labelColor=1ED760&logo=spotify&logoColor=white&link=link)](https://open.spotify.com/user/cfeabgzyulqdxjtszqm9qrz8p)
 
+
 ### 𝘊𝘰𝘥𝘪𝘯𝘨
 
 <hr>
@@ -35,7 +36,7 @@
     <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="css3" width="40" height="40"/> </a>
 </p>
 
-### 𝘋𝘪𝘴𝘤𝘰𝘳𝘥
+### 𝘋𝘪𝘴𝘤𝘰𝘳𝘥 & 𝘚𝘱𝘰𝘵𝘪𝘧𝘺
 
 <hr>
 <p align="center">
@@ -44,8 +45,15 @@
             src="https://discord.c99.nl/widget/theme-3/568157479020527636.png"
             alt="l33t community"
         />
+    </a> <br><br>
+    <a href="https://discord.com/users/568157479020527636" target="_blank">
+        <img
+            src="https://spotify-recently-played-readme.vercel.app/api?user=cfeabgzyulqdxjtszqm9qrz8p&count=1"
+            alt="l33t community"
+        />
     </a>
 </p>
+
 
 ### 𝘎𝘪𝘵𝘩𝘶𝘣 𝘚𝘵𝘢𝘵𝘶𝘴
 
