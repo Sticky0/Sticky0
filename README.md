@@ -23,7 +23,7 @@
 [![Spotify Badge](https://img.shields.io/badge/-Spotify-1ED760?style=flat-quare&labelColor=1ED760&logo=spotify&logoColor=white&link=link)](https://open.spotify.com/user/cfeabgzyulqdxjtszqm9qrz8p)
 
 
-# Lenguajes y herramientas 🔧
+**Lenguajes y herramientas 🔧**
 <p align="left">
     <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a>
     <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a>
