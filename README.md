@@ -1,5 +1,5 @@
 
-<p align="left">
+<p align="center">
     <a href="https://github.com/Zenin0" target="_blank">
         <img
             src="https://readme-typing-svg.herokuapp.com/?size=15&width=280&lines=++Coded+by+Isaac+Sanz+🧑🏼‍💻"
@@ -13,16 +13,16 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 </p>
 
-<p align="right"><a href="https://discord.com/users/568157479020527636" target="_blank"><img src="https://discord.c99.nl/widget/theme-3/568157479020527636.png"alt="l33t community"/></a></p>
+
 
 - **Isaac Sanz 17 años「21/10/2004」**
 - **Sitios Web/Projectos:**<br>
     • *https://www.nakiri.x10.mx* 「Discord Bot」<br>
     • *https://www.tulant.x10.bz* 「Discord Server」<br>
-    • *https://www.bunsho.x10.mx* 「Editor de Texto」
-
-    
+    • *https://www.bunsho.x10.mx* 「Editor de Texto」    
 - **Discord: Zeninツ#3366**
+
+<p align="left"><a href="https://discord.com/users/568157479020527636" target="_blank"><img src="https://discord.c99.nl/widget/theme-4/568157479020527636.png"alt="l33t community"/></a></p><br>
 
 [![Github Badge](https://img.shields.io/badge/-Github-000?style=quare&labelColor=000&logo=Github&logoColor=white&link=link)](https://github.com/Zenin0) 
 [![Instagram Badge](https://img.shields.io/badge/-Instagram-C13584?style=flat-quare&labelColor=C13584&logo=instagram&logoColor=white&link=link)](https://instagram.com/Isaac__sg)
