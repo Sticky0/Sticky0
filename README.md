@@ -15,6 +15,8 @@
     • *https://www.nakiri.x10.mx* 「Discord Bot」<br>
     • *https://www.tulant.x10.bz* 「Discord Server」<br>
     • *https://www.bunsho.x10.mx* 「Editor de Texto」
+    
+- **Discord: Zeninツ#3366**
 
 [![Github Badge](https://img.shields.io/badge/-Github-000?style=quare&labelColor=000&logo=Github&logoColor=white&link=link)](https://github.com/Zenin0) 
 [![Instagram Badge](https://img.shields.io/badge/-Instagram-C13584?style=flat-quare&labelColor=C13584&logo=instagram&logoColor=white&link=link)](https://instagram.com/Isaac__sg)
@@ -35,7 +37,6 @@
 ### 𝘋𝘪𝘴𝘤𝘰𝘳𝘥
 
 <hr>
-<p align="center"><b>Discord: Zeninツ#3366</b><br><a href="https://discord.gg/GVHxGg3jpX"> discord.gg/Tulant<a>
 <p align="center">
     <a href="https://discord.com/users/568157479020527636" target="_blank">
         <img
