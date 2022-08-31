@@ -14,7 +14,7 @@
 
 <hr>
 
-- **Isaac Sanz 17 años「21/10/2004」** 「」
+- **Isaac Sanz 17 años「21/10/2004」**
 - **Sitios Web:**<br>
     • *https://www.nakiri.x10.mx* 「Discord Bot」<br>
     • *https://www.tulant.x10.bz* 「Discord Server」<br>
