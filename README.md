@@ -2,7 +2,7 @@
 <p align="center">
     <a href="https://github.com/Zenin0" target="_blank">
         <img
-            src="https://readme-typing-svg.herokuapp.com/?size=15&width=280&lines=cout%20<<%20'Hello%20World!';"
+            src="https://readme-typing-svg.herokuapp.com/?size=15&width=280&lines=cout%20<<%20'Coded%20by%20Isaac%20Sanz%20😈';"
             alt="Zenin0"
         />
     </a>
