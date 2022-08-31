@@ -1,7 +1,7 @@
 <a href="https://discordapp.com/users/568157479020527636"><img align='right' src="https://discord.c99.nl/widget/theme-3/568157479020527636.png"/></a>
 
 
-### 👋 Hola me llamo Zenin
+### 👋 Hola me llamo Isaac
 
 <b>Sobre mi</b>
 
