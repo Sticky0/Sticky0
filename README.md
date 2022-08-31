@@ -37,8 +37,9 @@ Algunos lenguajes con los que estoy un poco familiarizado
 [![Python Badge](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.w3schools.com/python)
 [![C Badge](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)](https://www.w3schools.com/c)
 [![CPP Badge](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://www.w3schools.com/cpp)
+[![PoweShell Badge](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white)](https://docs.microsoft.com/es-es/powershell/)
 [![ShellScript Badge](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)](https://www.shellscript.sh)
-[![PoweShell Badge](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white)](https://docs.microsoft.com/es-es/powershell/)    
+    
 ### 𝘎𝘪𝘵𝘩𝘶𝘣 𝘚𝘵𝘢𝘵𝘶𝘴
 
 ---
