@@ -32,7 +32,7 @@
     <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="css3" width="40" height="40"/> </a>
 </p>
 
-### Discord 
+### Discord & Spotify
 
 <p align="center">
     <a href="https://discord.com/users/568157479020527636" target="_blank">
@@ -40,7 +40,8 @@
             src="https://discord.c99.nl/widget/theme-3/568157479020527636.png"
             alt="l33t community"
         />
-    </a>      
+    </a>
+    [![Spotify](https://novatorem.bgstatic.vercel.app/api/spotify)](https://open.spotify.com/user/cfeabgzyulqdxjtszqm9qrz8p)
 </p>
 
 ### GitHub Stats
