@@ -1,7 +1,7 @@
 
 <p align="center">
     <a href="https://github.com/Zenin0" target="_blank">
-        <img src="https://readme-typing-svg.herokuapp.com/?size=15&width=300&lines=int%20main()%20{cout%20<<%20%27Isaac%20Sanz%27}" alt="Zenin0"/><br>
+        <img src="https://readme-typing-svg.herokuapp.com/?size=15&width=300&lines=int%20main()%20{cout%20<<%20%27Isaac%20Sanz%27}" alt="Zeninツ"/><br>
     </a>
     
 </p>
@@ -53,5 +53,5 @@ Algunos lenguajes con los que estoy un poco familiarizado
     <a href="https://github.com/Zenin0/Nakiri-Discord-Bot" target="_blank" rel="noreferrer"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=Zenin0&repo=Nakiri-Discord-Bot&theme=gotham" alt="Nakiri-Discord-Bot"/> </a>
     <a href="https://github.com/Zenin0/Bunsho-code" target="_blank" rel="noreferrer"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=Zenin0&repo=Bunsho-code&theme=gotham" alt="Nakiri-Discord-Bot"/> </a>
 </p>
-<p align="center"><img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=60&section=footer" alt="l33t community"/></p>
+<p align="center"><img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=60&section=footer" alt="Zeninツ"/></p>
  
