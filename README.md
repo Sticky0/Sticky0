@@ -41,8 +41,8 @@
             alt="l33t community"
         />
     </a>
-    [![Spotify](https://novatorem.bgstatic.vercel.app/api/spotify)](https://open.spotify.com/user/cfeabgzyulqdxjtszqm9qrz8p)
 </p>
+[![Spotify](https://novatorem.bgstatic.vercel.app/api/spotify)](https://open.spotify.com/user/cfeabgzyulqdxjtszqm9qrz8p)
 
 ### GitHub Stats
 
