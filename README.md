@@ -11,7 +11,6 @@
 </p>
 
 
-
 - **Isaac Sanz 17 años「21/10/2004」**
 - **Sitios Web/Projectos:**
     - *https://www.bunsho.x10.mx* 「Editor de Texto」
@@ -29,7 +28,7 @@
 
 ### 𝘊𝘰𝘥𝘪𝘯𝘨
 
-<hr>
+---
 Algunos lenguajes con los que estoy un poco familiarizado
 <br><br>
 
@@ -42,7 +41,7 @@ Algunos lenguajes con los que estoy un poco familiarizado
 [![PoweShell Badge](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white)](https://www.shellscript.sh)    
 ### 𝘎𝘪𝘵𝘩𝘶𝘣 𝘚𝘵𝘢𝘵𝘶𝘴
 
-<hr>
+---
 <p align = 'center'>
     <img src='https://github-readme-streak-stats.herokuapp.com/?user=Zenin0&theme=gotham&hide_border=true'>
 </p>
