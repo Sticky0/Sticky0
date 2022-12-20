@@ -11,7 +11,7 @@
 </p>
 
 
-- **Isaac Sanz 17 años「21/10/2004」**
+- **Isaac Sanz 18 años「21/10/2004」**
 - **Sitios Web/Projectos:**
     - *https://www.bunsho.x10.mx* 「Editor de Texto」
     - *https://www.nakiri.x10.mx* 「Discord Bot」<br>
