@@ -1,6 +1,7 @@
 
 <p align="center">
     <a href="https://github.com/Zenin0" target="_blank">
+        <img src="https://avatars.githubusercontent.com/u/85170351?v=4" width="20%"  ><br><br>
         <img src="https://readme-typing-svg.herokuapp.com/?size=15&width=300&lines=int%20main()%20{cout%20<<%20%27Isaac%20Sanz%27}" alt="Zeninツ"/><br>
     </a>
     
