@@ -16,7 +16,6 @@
 - **Sitios Web/Projectos:**
     - *https://www.bunsho.x10.mx* 「Editor de Texto」
     - *https://www.nakiri.x10.mx* 「Discord Bot」<br>
-    - *https://www.tulant.x10.bz* 「Discord Server」<br>
 - **Discord: Zeninツ#3366**
 
 
