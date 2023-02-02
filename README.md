@@ -4,7 +4,6 @@
         <img src="https://avatars.githubusercontent.com/u/85170351?v=4" width="20%"  ><br><br>
         <img src="https://readme-typing-svg.herokuapp.com/?size=15&width=300&lines=int%20main()%20{cout%20<<%20%27Isaac%20Sanz%27}" alt="Zeninツ"/><br>
     </a>
-    
 </p>
 
 ![Gif](https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif "gif")
@@ -16,12 +15,9 @@
     - *https://www.nakiri.x10.mx* 「Discord Bot」<br>
 - **Discord: Zeninツ#3366**
 
-
-
 [![Github Badge](https://img.shields.io/badge/-Github-000?style=quare&labelColor=000&logo=Github&logoColor=white&link=link)](https://github.com/Zenin0) 
 [![Instagram Badge](https://img.shields.io/badge/-Instagram-C13584?style=flat-quare&labelColor=C13584&logo=instagram&logoColor=white&link=link)](https://instagram.com/Isaac__sg)
 [![Discord Badge](https://img.shields.io/badge/-Discord-5865F2?style=flat-quare&labelColor=5865F2&logo=discord&logoColor=white&link=link)](https://discord.gg/GVHxGg3jpX)
-
 
 ### 𝘊𝘰𝘥𝘪𝘯𝘨
 
@@ -41,6 +37,7 @@ Algunos lenguajes con los que estoy un poco familiarizado
 ### 𝘎𝘪𝘵𝘩𝘶𝘣 𝘚𝘵𝘢𝘵𝘶𝘴
 
 ---
+
 <p align = 'center'>
     <img src='https://github-readme-streak-stats.herokuapp.com/?user=Zenin0&theme=gotham&hide_border=true'>
 </p>
@@ -52,4 +49,6 @@ Algunos lenguajes con los que estoy un poco familiarizado
     <a href="https://github.com/Zenin0/Nakiri-Discord-Bot" target="_blank" rel="noreferrer"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=Zenin0&repo=Nakiri-Discord-Bot&theme=gotham" alt="Nakiri-Discord-Bot"/> </a>
     <a href="https://github.com/Zenin0/Bunsho-code" target="_blank" rel="noreferrer"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=Zenin0&repo=Bunsho-code&theme=gotham" alt="Nakiri-Discord-Bot"/> </a>
 </p>
-<p align="center"><img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=60&section=footer" alt="Zeninツ"/></p>
+<p align="center">
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=60&section=footer" alt="Zeninツ"/>
+</p>
