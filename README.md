@@ -55,4 +55,3 @@ Algunos lenguajes con los que estoy un poco familiarizado
     <a href="https://github.com/Zenin0/Bunsho-code" target="_blank" rel="noreferrer"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=Zenin0&repo=Bunsho-code&theme=gotham" alt="Nakiri-Discord-Bot"/> </a>
 </p>
 <p align="center"><img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=60&section=footer" alt="Zeninツ"/></p>
- 
