@@ -39,14 +39,3 @@
 <p align = 'center'>
     <img src='https://github-readme-streak-stats.herokuapp.com/?user=Zenin0&theme=gotham&hide_border=true'>
 </p>
-<p align = 'center'>
-    <img src='https://github-readme-stats.vercel.app/api?username=Zenin0&count_private=true&include_all_commits=true&show_icons=true&theme=gotham&hide_border=true&line_height=27'/>
-    <img src='https://github-readme-stats.vercel.app/api/top-langs/?username=Zenin0&show_icons=true&hide=shell&theme=gotham&line_height=27&hide_border=true'/>
-</p>
-<p align = 'center'>
-    <a href="https://github.com/Zenin0/Nakiri-Discord-Bot" target="_blank" rel="noreferrer"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=Zenin0&repo= Proyecto-DAM&theme=gotham" alt="Nakiri-Discord-Bot"/> </a>
-    <a href="https://github.com/Zenin0/Bunsho-code" target="_blank" rel="noreferrer"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=Zenin0&repo=Bunsho-code&theme=gotham" alt="Nakiri-Discord-Bot"/> </a>
-</p>
-<p align="center">
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=60&section=footer" alt="Zeninツ"/>
-</p>
