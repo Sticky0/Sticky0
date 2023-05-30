@@ -44,7 +44,7 @@
     <img src='https://github-readme-stats.vercel.app/api/top-langs/?username=Zenin0&show_icons=true&hide=shell&theme=gotham&line_height=27&hide_border=true'/>
 </p>
 <p align = 'center'>
-    <a href="https://github.com/Zenin0/Nakiri-Discord-Bot" target="_blank" rel="noreferrer"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=Zenin0&repo=Nakiri-Discord-Bot&theme=gotham" alt="Nakiri-Discord-Bot"/> </a>
+    <a href="https://github.com/Zenin0/Nakiri-Discord-Bot" target="_blank" rel="noreferrer"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=Zenin0&repo= Proyecto-DAM&theme=gotham" alt="Nakiri-Discord-Bot"/> </a>
     <a href="https://github.com/Zenin0/Bunsho-code" target="_blank" rel="noreferrer"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=Zenin0&repo=Bunsho-code&theme=gotham" alt="Nakiri-Discord-Bot"/> </a>
 </p>
 <p align="center">
