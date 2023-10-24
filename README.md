@@ -87,6 +87,7 @@
 [![Glipper Scripts](https://github-readme-stats.vercel.app/api/pin/?username=Zenin0&repo=Glipper_Scripts&border_color=7F3FBF&bg_color=0D1117&title_color=C9D1D9&text_color=8B949E&icon_color=7F3FBF)](https://github.com/Zenin0/Glipper_Scripts)
 [![Bunsho Editor](https://github-readme-stats.vercel.app/api/pin/?username=Zenin0&repo=Bunsho-0.1&border_color=7F3FBF&bg_color=0D1117&title_color=C9D1D9&text_color=8B949E&icon_color=7F3FBF)](https://github.com/Zenin0/Bunsho-0.1)
 [![Wallpapers](https://github-readme-stats.vercel.app/api/pin/?username=Zenin0&repo=Wallpapers&border_color=7F3FBF&bg_color=0D1117&title_color=C9D1D9&text_color=8B949E&icon_color=7F3FBF)](https://github.com/Zenin0/Wallpapers)
+[![Acepta El Reto](https://github-readme-stats.vercel.app/api/pin/?username=Zenin0&repo=Acepta-El-Reto&border_color=7F3FBF&bg_color=0D1117&title_color=C9D1D9&text_color=8B949E&icon_color=7F3FBF)](https://github.com/Zenin0/Acepta-El-Reto)
 
 <p align="left">
   <a href="https://github.com/Zenin0?tab=repositories" target="_blank"><img alt="All Repositories" title="All Repositories" src="https://img.shields.io/badge/-All%20Repos-2962FF?style=for-the-badge&logo=koding&logoColor=white"/></a>
