@@ -5,7 +5,7 @@
 <h2 align="center">
   Welcome to Zenin World!
   <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28">
-  </h2>
+</h2>
 
 
 
@@ -33,6 +33,7 @@
  <a href="https://www.linkedin.com/in/isaac-sanz-067307272" target="_blank">
   <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Zenin"/>
  </a>
+  
  <a href="https://www.instagram.com/isaac__sg/" target="_blank">
   <img src="https://img.shields.io/badge/Instagram-fe4164?style=for-the-badge&logo=instagram&logoColor=white" alt="Zenin0" />
  </a> 
