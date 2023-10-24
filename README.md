@@ -85,8 +85,6 @@
 [![Discord Bot](https://github-readme-stats.vercel.app/api/pin/?username=Zenin0&repo=Nakiri-Discord-Bot&border_color=7F3FBF&bg_color=0D1117&title_color=C9D1D9&text_color=8B949E&icon_color=7F3FBF)](https://github.com/Zenin0/Nakiri-Discord-Bot)
 [![DAM Proyect](https://github-readme-stats.vercel.app/api/pin/?username=Zenin0&repo=Proyecto-DAM&border_color=7F3FBF&bg_color=0D1117&title_color=C9D1D9&text_color=8B949E&icon_color=7F3FBF)](https://github.com/Zenin0/Proyecto-DAM)
 [![Glipper Scripts](https://github-readme-stats.vercel.app/api/pin/?username=Zenin0&repo=Glipper_Scripts&border_color=7F3FBF&bg_color=0D1117&title_color=C9D1D9&text_color=8B949E&icon_color=7F3FBF)](https://github.com/Zenin0/Glipper_Scripts)
-[![Bunsho Editor](https://github-readme-stats.vercel.app/api/pin/?username=Zenin0&repo=Bunsho-0.1&border_color=7F3FBF&bg_color=0D1117&title_color=C9D1D9&text_color=8B949E&icon_color=7F3FBF)](https://github.com/Zenin0/Bunsho-0.1)
-[![Wallpapers](https://github-readme-stats.vercel.app/api/pin/?username=Zenin0&repo=Wallpapers&border_color=7F3FBF&bg_color=0D1117&title_color=C9D1D9&text_color=8B949E&icon_color=7F3FBF)](https://github.com/Zenin0/Wallpapers)
 [![Windows Activation](https://github-readme-stats.vercel.app/api/pin/?username=Zenin0&repo=Windows_Activation&border_color=7F3FBF&bg_color=0D1117&title_color=C9D1D9&text_color=8B949E&icon_color=7F3FBF)](https://github.com/Zenin0/Windows_Activation)
 
 <p align="left">
