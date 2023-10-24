@@ -47,7 +47,7 @@
  # About me
  
 <p>
-
+<img align="right" width="350" src="https://avatars.githubusercontent.com/u/85170351?v=4" alt="Coding gif" />
  ✌️ &emsp; Enjoy to do programming <br/><br/>
  ❤️ &emsp; Love to writing code and learning new features<br/><br/>
  📧 &emsp; Reach me anytime: isaacsanz@proton.me<br/><br/>
