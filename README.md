@@ -16,9 +16,7 @@
 
 <!-- Intro  -->
 <h3 align="center">
-        <samp>&gt; Hey There!, I am
-                <b>Zenin</b>
-        </samp>
+        <samp>&gt; Hey There!, I am<b>Zenin</b></samp>
 </h3>
 
 
