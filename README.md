@@ -9,15 +9,8 @@
 ![Gif](https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif "gif")
 
 
-- **Isaac Sanz 18 años「21/10/2004」**
-- **Sitios Web/Projectos:**
-    - *https://www.bunsho.x10.mx* 「Editor de Texto」
-    - *https://www.nakiri.x10.mx* 「Discord Bot」<br>
+- **Isaac Sanz**
 - **Discord: Zeninツ#3366**
-
-[![Github Badge](https://img.shields.io/badge/-Github-000?style=quare&labelColor=000&logo=Github&logoColor=white&link=link)](https://github.com/Zenin0) 
-[![Instagram Badge](https://img.shields.io/badge/-Instagram-C13584?style=flat-quare&labelColor=C13584&logo=instagram&logoColor=white&link=link)](https://instagram.com/Isaac__sg)
-[![Discord Badge](https://img.shields.io/badge/-Discord-5865F2?style=flat-quare&labelColor=5865F2&logo=discord&logoColor=white&link=link)](https://discord.gg/GVHxGg3jpX)
 
 ### 𝘊𝘰𝘥𝘪𝘯𝘨
 
