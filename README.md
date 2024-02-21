@@ -75,7 +75,7 @@
 <br/>
 
 ## Top Open Source -
-[![Discord Bot](https://github-readme-stats.vercel.app/api/pin/?username=Zenin0&repo=Nakiri-Discord-Bot&border_color=7F3FBF&bg_color=0D1117&title_color=C9D1D9&text_color=8B949E&icon_color=7F3FBF)](https://github.com/Zenin0/Nakiri-Discord-Bot)
+[![Spafy](https://github-readme-stats.vercel.app/api/pin/?username=Zenin0&repo=Spafy&border_color=7F3FBF&bg_color=0D1117&title_color=C9D1D9&text_color=8B949E&icon_color=7F3FBF)](https://github.com/Zenin0/Spafy)
 [![DAM Proyect](https://github-readme-stats.vercel.app/api/pin/?username=Zenin0&repo=Proyecto-DAM&border_color=7F3FBF&bg_color=0D1117&title_color=C9D1D9&text_color=8B949E&icon_color=7F3FBF)](https://github.com/Zenin0/Proyecto-DAM)
 [![Glipper Scripts](https://github-readme-stats.vercel.app/api/pin/?username=Zenin0&repo=Glipper_Scripts&border_color=7F3FBF&bg_color=0D1117&title_color=C9D1D9&text_color=8B949E&icon_color=7F3FBF)](https://github.com/Zenin0/Glipper_Scripts)
 [![Wallpapers](https://github-readme-stats.vercel.app/api/pin/?username=Zenin0&repo=Wallpapers&border_color=7F3FBF&bg_color=0D1117&title_color=C9D1D9&text_color=8B949E&icon_color=7F3FBF)](https://github.com/Zenin0/Wallpapers)
