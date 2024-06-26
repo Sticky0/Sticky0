@@ -103,7 +103,6 @@
 [![InmoMarket](https://github-readme-stats.vercel.app/api/pin/?username=Zenin0&repo=InmoMarket&border_color=7F3FBF&bg_color=0D1117&title_color=C9D1D9&text_color=8B949E&icon_color=7F3FBF)](https://github.com/Zenin0/InmoMarket)
 [![Glipper Scripts](https://github-readme-stats.vercel.app/api/pin/?username=Zenin0&repo=Glipper_Scripts&border_color=7F3FBF&bg_color=0D1117&title_color=C9D1D9&text_color=8B949E&icon_color=7F3FBF)](https://github.com/Zenin0/Glipper_Scripts)
 
-## Stats
 <!--START_SECTION:waka-->
 
 ```rust
