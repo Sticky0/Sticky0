@@ -106,15 +106,15 @@
 <!--START_SECTION:waka-->
 
 ```rust
-From: 23 June 2024 - To: 01 July 2024
+From: 23 June 2024 - To: 02 July 2024
 
-Total Time: 23 hrs 48 mins
+Total Time: 26 hrs 52 mins
 
-Java                  18 hrs 48 mins  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒░░░░░   78.99 %
-JavaScript            2 hrs 16 mins   ▓▓▒░░░░░░░░░░░░░░░░░░░░░░   09.56 %
-Docker                57 mins         ▓░░░░░░░░░░░░░░░░░░░░░░░░   04.04 %
-HTML                  45 mins         ▓░░░░░░░░░░░░░░░░░░░░░░░░   03.19 %
-Properties            20 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.42 %
+Java                  20 hrs 59 mins  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒░░░░░   78.12 %
+JavaScript            2 hrs 45 mins   ▓▓▒░░░░░░░░░░░░░░░░░░░░░░   10.25 %
+Docker                57 mins         ▓░░░░░░░░░░░░░░░░░░░░░░░░   03.58 %
+HTML                  53 mins         ▓░░░░░░░░░░░░░░░░░░░░░░░░   03.31 %
+Properties            34 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   02.15 %
 ```
 
 <!--END_SECTION:waka-->
