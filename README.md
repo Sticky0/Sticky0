@@ -106,20 +106,20 @@
 <!--START_SECTION:waka-->
 
 ```rust
-From: 23 June 2024 - To: 12 August 2024
+From: 23 June 2024 - To: 13 August 2024
 
-Total Time: 135 hrs 10 mins
+Total Time: 139 hrs 40 mins
 
-Java                   80 hrs 47 mins  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░░░   59.73 %
-Kotlin                 21 hrs 34 mins  ▓▓▓▓░░░░░░░░░░░░░░░░░░░░░   15.95 %
-JavaScript             13 hrs 42 mins  ▓▓▒░░░░░░░░░░░░░░░░░░░░░░   10.14 %
-Properties             3 hrs 45 mins   ▒░░░░░░░░░░░░░░░░░░░░░░░░   02.77 %
-Java Properties        3 hrs 35 mins   ▒░░░░░░░░░░░░░░░░░░░░░░░░   02.65 %
-XML                    3 hrs 11 mins   ▒░░░░░░░░░░░░░░░░░░░░░░░░   02.36 %
-HTML                   2 hrs 51 mins   ▒░░░░░░░░░░░░░░░░░░░░░░░░   02.11 %
-Docker                 1 hr 30 mins    ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.12 %
-Gradle                 58 mins         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.72 %
-Groovy                 45 mins         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.56 %
+Java                   82 hrs 40 mins  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░░░   59.14 %
+Kotlin                 23 hrs 20 mins  ▓▓▓▓░░░░░░░░░░░░░░░░░░░░░   16.70 %
+JavaScript             13 hrs 42 mins  ▓▓▒░░░░░░░░░░░░░░░░░░░░░░   09.81 %
+Properties             3 hrs 57 mins   ▒░░░░░░░░░░░░░░░░░░░░░░░░   02.83 %
+Java Properties        3 hrs 37 mins   ▒░░░░░░░░░░░░░░░░░░░░░░░░   02.59 %
+XML                    3 hrs 19 mins   ▒░░░░░░░░░░░░░░░░░░░░░░░░   02.37 %
+HTML                   2 hrs 51 mins   ▒░░░░░░░░░░░░░░░░░░░░░░░░   02.04 %
+Docker                 1 hr 30 mins    ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.08 %
+Gradle                 1 hr 12 mins    ░░░░░░░░░░░░░░░░░░░░░░░░░   00.86 %
+Groovy                 53 mins         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.64 %
 ```
 
 <!--END_SECTION:waka-->
