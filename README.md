@@ -1,8 +1,8 @@
 # 💫 About Me:
-Fullstack developer from Spain 🗣️
-✌️ &emsp; Enjoy to do programming <br/><br/>
- ❤️ &emsp; Love to writing code and learning new features<br/><br/>
- 📧 &emsp; Reach me anytime: isaacsanz@proton.me<br/><br/>
+Fullstack developer from Spain 🗣️ <br/>
+✌️ &emsp; Enjoy to do programming <br/>
+ ❤️ &emsp; Love to writing code and learning new features<br/>
+ 📧 &emsp; Reach me anytime: isaacsanz@proton.me<br/>
 
 
 ## 🌐 Socials:
