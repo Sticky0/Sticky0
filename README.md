@@ -35,7 +35,7 @@ Fullstack developer from Spain 🗣️ <br/>
 <!--START_SECTION:waka-->
 
 ```rust
-From: 23 June 2024 - To: 27 December 2024
+From: 23 June 2024 - To: 28 December 2024
 
 Total Time: 408 hrs 57 mins
 
