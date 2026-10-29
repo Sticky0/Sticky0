@@ -258,6 +258,35 @@ ${slime(808, 7, { band: 6, min: 10, max: 56, gap: 40 })}
 </div></body></html>`;
 }
 
+// Carteles colgantes que hacen de títulos de sección en el README.
+const SIGNS = [
+  { file: 'cartel-destacados.png', top: 'PASILLO 1', text: 'Destacados', icon: '⭐' },
+  { file: 'cartel-ofertas.png', top: 'PASILLO 2', text: 'Ofertas', icon: '🏷️' },
+  { file: 'cartel-caja.png', top: 'CAJA 01', text: 'Su ticket', icon: '🧾' },
+];
+
+function renderSign({ top, text, icon }, n) {
+  return `<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;800;900&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:transparent;font-family:Rubik,Arial,sans-serif}
+.w{width:440px;padding:0 20px 50px;box-sizing:border-box;display:flex;flex-direction:column;align-items:center}
+.chains{display:flex;justify-content:space-between;width:260px;height:46px}
+.chains i{width:6px;height:46px;background:repeating-linear-gradient(180deg,#9e9e9e 0 7px,#616161 7px 9px,transparent 9px 11px);border-radius:3px}
+.s{position:relative;width:360px;background:#4a148c;border:5px solid #ffd400;border-radius:16px;padding:12px 18px 16px;
+ box-sizing:border-box;text-align:center;box-shadow:0 10px 18px -6px rgba(0,0,0,.45);transform:rotate(-1.5deg)}
+.s:before,.s:after{content:"";position:absolute;top:8px;width:12px;height:12px;border-radius:50%;background:#ffd400;border:2px solid #8a6d00}
+.s:before{left:44px}.s:after{right:44px}
+.top{display:inline-block;background:#ffd400;color:#4a148c;font-weight:900;font-size:15px;letter-spacing:3px;padding:3px 12px;border-radius:20px}
+.t{white-space:nowrap;color:#fff;font-weight:900;font-size:36px;line-height:1.1;margin-top:8px;text-transform:uppercase;letter-spacing:1px;text-shadow:0 3px 0 #2a0a52}
+.slime{position:absolute;left:30px;top:calc(100% - 4px)}
+</style></head><body><div class="w">
+<div class="chains"><i></i><i></i></div>
+<div class="s"><span class="top">${top}</span><div class="t">${icon} ${esc(text)}</div>
+${slime(300, 40 + n, { band: 6, min: 6, max: 34, gap: 60, rounded: true })}</div>
+</div></body></html>`;
+}
+
 // Cartel de ofertas: cada estadística es una etiqueta de precio.
 function renderOffers(stats) {
   const fmt = (n) => (n == null ? '—' : new Intl.NumberFormat('es-ES').format(n));
@@ -394,6 +423,13 @@ function updateReadmePinned(repos) {
   await offers.setContent(renderOffers(stats), { waitUntil: 'networkidle' });
   await offers.evaluate(() => document.fonts.ready);
   await offers.locator('.f').screenshot({ path: path.join(OUT, 'ofertas.png'), omitBackground: true });
+
+  for (const [i, sign] of SIGNS.entries()) {
+    const page = await browser.newPage({ viewport: { width: 460, height: 100 }, deviceScaleFactor: 2 });
+    await page.setContent(renderSign(sign, i), { waitUntil: 'networkidle' });
+    await page.evaluate(() => document.fonts.ready);
+    await page.locator('.w').screenshot({ path: path.join(OUT, sign.file), omitBackground: true });
+  }
 
   const store = await browser.newPage({ viewport: { width: 840, height: 100 }, deviceScaleFactor: 2 });
   await store.setContent(renderStore(), { waitUntil: 'networkidle' });
