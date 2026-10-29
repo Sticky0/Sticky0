@@ -14,6 +14,15 @@
 
 <div align="center">
 
+## ⭐ Productos destacados
+
+<sub>Mis repositorios pineados, recién salidos del horno</sub>
+
+<!--START_SECTION:destacados-->
+<!--END_SECTION:destacados-->
+
+---
+
 ## 🏷️ Ofertas de la semana
 
 <sub>Mis estadísticas de GitHub, actualizadas cada día</sub>
