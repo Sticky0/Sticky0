@@ -37,6 +37,4 @@
 
 🛒 **¡Gracias por su visita! Vuelva pronto.** 🛒
 
-<a href="https://visitcount.itsvg.in"><img src="https://visitcount.itsvg.in/api?id=Sticky0&icon=0&color=0" alt="Visitas"/></a>
-
 </div>
