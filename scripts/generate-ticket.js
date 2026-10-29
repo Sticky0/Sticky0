@@ -1,6 +1,7 @@
 // Genera las imágenes del README a partir de los datos públicos de GitHub:
 // la fachada con el mapa de la tienda (assets/tienda.png), el ticket de compra
-// (assets/ticket.png y assets/ticket.pdf) y el cartel de ofertas (assets/ofertas.png).
+// (assets/ticket.png y assets/ticket.pdf), el cartel de ofertas (assets/ofertas.png)
+// y los repos pineados como productos destacados (assets/destacado-N.png).
 const fs = require('fs');
 const path = require('path');
 const { chromium } = require('playwright');
@@ -63,6 +64,21 @@ async function fetchContributions() {
     issues: data.user.issues.totalCount,
     ...streaks(days),
   };
+}
+
+// Repositorios pineados en el perfil (también por GraphQL).
+async function fetchPinned() {
+  if (!TOKEN) throw new Error('sin GITHUB_TOKEN');
+  const query = `query($login:String!){user(login:$login){pinnedItems(first:6,types:REPOSITORY){nodes{
+    ... on Repository{name description url stargazerCount forkCount primaryLanguage{name color}}}}}}`;
+  const res = await fetch('https://api.github.com/graphql', {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${TOKEN}`, 'User-Agent': USER },
+    body: JSON.stringify({ query, variables: { login: USER } }),
+  });
+  const { data, errors } = await res.json();
+  if (!res.ok || errors) throw new Error(`graphql: ${res.status}`);
+  return data.user.pinnedItems.nodes;
 }
 
 function streaks(days) {
@@ -291,6 +307,60 @@ ${slime(808, 11, { band: 8, min: 8, max: 40, gap: 50 })}
 </div></body></html>`;
 }
 
+// Repo pineado como producto destacado en la estantería.
+function renderPinned(repo, n) {
+  const lang = repo.primaryLanguage || { name: 'Código', color: '#8e24aa' };
+  const desc = repo.description || 'Producto artesanal, sin descripción en la etiqueta.';
+  return `<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;800;900&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:transparent;font-family:Rubik,Arial,sans-serif}
+.c{position:relative;overflow:hidden;width:400px;height:260px;margin:10px;box-sizing:border-box;border:6px solid #7b1fa2;border-radius:18px;
+ background:#fff8e1;display:flex;flex-direction:column}
+.slime{position:absolute;top:0;left:0;z-index:2}
+.box{position:relative;margin:34px 18px 0;flex:1;background:#fff;border-radius:12px;border:3px solid ${lang.color};
+ box-shadow:0 6px 0 rgba(0,0,0,.12);overflow:hidden;display:flex;flex-direction:column}
+.band{background:${lang.color};height:14px}
+.in{padding:10px 14px 0;flex:1;display:flex;flex-direction:column}
+.k{font-size:12px;font-weight:800;color:#7b1fa2;letter-spacing:2px}
+.name{font-weight:900;font-size:24px;color:#1a1a1a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin:2px 0 6px}
+.desc{font-weight:500;font-size:14px;color:#444;line-height:1.3;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.foot{display:flex;align-items:center;justify-content:space-between;margin-top:auto;padding:8px 0 10px}
+.lang{display:flex;align-items:center;gap:6px;font-weight:800;font-size:14px}
+.dot{width:12px;height:12px;border-radius:50%;background:${lang.color};border:1px solid rgba(0,0,0,.2)}
+.price{background:#ffd400;border:2px dashed #e30613;border-radius:8px;padding:3px 10px;font-weight:900;font-size:16px;color:#e30613}
+.sticker{position:absolute;right:-6px;top:20px;z-index:3;background:#e30613;color:#fff;font-weight:900;font-size:13px;
+ padding:7px 10px;border-radius:50%;transform:rotate(12deg);text-align:center;line-height:1.05;box-shadow:0 2px 4px rgba(0,0,0,.25)}
+.shelf{height:10px;background:#8d5a2b;margin:10px 0 0}
+</style></head><body><div class="c">
+${slime(388, 20 + n, { band: 6, min: 6, max: 24, gap: 40 })}
+<div class="sticker">⭐ TOP<br>VENTAS</div>
+<div class="box"><div class="band"></div><div class="in">
+<div class="k">PRODUCTO DESTACADO Nº${n}</div>
+<div class="name">${esc(repo.name)}</div>
+<div class="desc">${esc(desc)}</div>
+<div class="foot"><span class="lang"><span class="dot"></span>${esc(lang.name)}</span>
+<span class="price">★ ${repo.stargazerCount} · ${repo.forkCount} forks</span></div>
+</div></div>
+<div class="shelf"></div>
+</div></body></html>`;
+}
+
+// Reescribe la sección de destacados del README con una imagen enlazada por repo.
+function updateReadmePinned(repos) {
+  const file = path.join(__dirname, '..', 'README.md');
+  const start = '<!--START_SECTION:destacados-->';
+  const end = '<!--END_SECTION:destacados-->';
+  const readme = fs.readFileSync(file, 'utf8');
+  const a = readme.indexOf(start);
+  const b = readme.indexOf(end);
+  if (a < 0 || b < 0) return;
+  const cards = repos
+    .map((r, i) => `<a href="${r.url}"><img src="assets/destacado-${i + 1}.png" width="350" alt="${esc(r.name)}"/></a>`)
+    .join('\n');
+  fs.writeFileSync(file, `${readme.slice(0, a + start.length)}\n${cards}\n${readme.slice(b)}`);
+}
+
 (async () => {
   let stats;
   try {
@@ -303,6 +373,12 @@ ${slime(808, 11, { band: 8, min: 8, max: 40, gap: 50 })}
     Object.assign(stats, await fetchContributions());
   } catch (e) {
     console.warn(`No se pudieron leer las contribuciones (${e.message}).`);
+  }
+  let pinned = null;
+  try {
+    pinned = await fetchPinned();
+  } catch (e) {
+    console.warn(`No se pudieron leer los repos pineados (${e.message}); se dejan como están.`);
   }
   const html = render({ ...stats, items: toItems(stats.languages) }, new Date());
 
@@ -323,6 +399,17 @@ ${slime(808, 11, { band: 8, min: 8, max: 40, gap: 50 })}
   await store.setContent(renderStore(), { waitUntil: 'networkidle' });
   await store.evaluate(() => document.fonts.ready);
   await store.locator('.b').screenshot({ path: path.join(OUT, 'tienda.png'), omitBackground: true });
+
+  if (pinned) {
+    for (const f of fs.readdirSync(OUT)) if (/^destacado-\d+\.png$/.test(f)) fs.unlinkSync(path.join(OUT, f));
+    for (const [i, repo] of pinned.entries()) {
+      const card = await browser.newPage({ viewport: { width: 420, height: 100 }, deviceScaleFactor: 2 });
+      await card.setContent(renderPinned(repo, i + 1), { waitUntil: 'networkidle' });
+      await card.evaluate(() => document.fonts.ready);
+      await card.locator('.c').screenshot({ path: path.join(OUT, `destacado-${i + 1}.png`), omitBackground: true });
+    }
+    updateReadmePinned(pinned);
+  }
   await browser.close();
   console.log('Imágenes generadas en assets/');
 })();
