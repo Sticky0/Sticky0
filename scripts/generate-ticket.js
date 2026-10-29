@@ -148,12 +148,11 @@ ${slime(472, 5, { band: 6, min: 8, max: 34, gap: 38 })}
 <hr>
 <div class="r h"><span>CANT DESCRIPCIÓN</span><span>IMPORTE</span></div>
 ${rows}
-<div class="r"><span>1 GANAS DE APRENDER</span><span>GRATIS</span></div>
 <hr>
 <div class="r tot"><span>TOTAL</span><span>100,00 €</span></div>
-<div class="r"><span>PAGADO CON</span><span>CAFÉ ☕</span></div>
+<div class="r"><span>PAGADO CON</span><span>WHITE MONSTER 🥤</span></div>
 <hr>
-<div class="r s"><span>ARTÍCULOS: ${items.length + 1}</span><span>IVA INCLUIDO</span></div>
+<div class="r s"><span>ARTÍCULOS: ${items.length}</span><span>IVA INCLUIDO</span></div>
 ${extra}
 <hr>
 <div class="c">★ ¡GRACIAS POR SU VISITA! ★<br>Vuelva pronto</div>
@@ -254,7 +253,7 @@ ${slime(808, 7, { band: 6, min: 10, max: 56, gap: 40 })}
 <div class="grid">${aisles}</div>
 <div class="floor"><span class="door">🚪 ENTRADA</span><span class="here">📍 Usted está aquí</span><span class="till">🧾 CAJA 01 · ticket abajo ⬇</span></div>
 </div>
-<div class="strip">CÓDIGO FRESCO Y PEGAJOSO <b>·</b> SIEMPRE APRENDIENDO</div>
+<div class="strip">CÓDIGO FRESCO Y PEGAJOSO</div>
 </div></body></html>`;
 }
 
