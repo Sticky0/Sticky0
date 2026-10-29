@@ -121,7 +121,7 @@ hr{border:0;border-top:2px dashed #555;margin:12px 0}
 .h{font-weight:bold}.tot{font-size:20px;font-weight:bold}.s{font-size:12px;color:#444}
 .bar{height:56px;margin:14px auto 4px;width:300px;background:repeating-linear-gradient(90deg,#000 0 2px,#fffef9 2px 4px,#000 4px 5px,#fffef9 5px 8px,#000 8px 11px,#fffef9 11px 12px,#000 12px 13px,#fffef9 13px 16px)}
 </style></head><body><div class="t">
-<div class="c big">🛒 SUPER ISAAC</div>
+<div class="c big">🛒 StickyTM</div>
 <div class="c">Productos frescos de código</div>
 <div class="c s">C/ Fullstack, 1 · España<br>Contacto: isaacsanz@proton.me</div>
 <hr>
@@ -172,7 +172,7 @@ body{margin:0;background:transparent;font-family:Rubik,Arial,sans-serif}
 </style></head><body><div class="b">
 <div class="awning"></div>
 <div class="sign"><div class="cart">🛒</div>
-<div><div class="name">SUPER ISAAC</div><div class="tag">Fullstack Developer · España 🇪🇸</div></div>
+<div><div class="name">StickyTM</div><div class="tag">Fullstack Developer · España 🇪🇸</div></div>
 <div class="open">ABIERTO<br>24H<small>siempre</small></div></div>
 <div class="shelf">${shelf}</div>
 <div class="strip">PRODUCTOS FRESCOS DE CÓDIGO <b>·</b> SIEMPRE APRENDIENDO</div>
