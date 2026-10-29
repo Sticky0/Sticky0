@@ -93,28 +93,6 @@
 
 </div>
 
-## ⏱️ Coding Activity
-
-<!--START_SECTION:waka-->
-
-```rust
-From: 23 June 2024 - To: 27 October 2026
-
-Total Time: 413 hrs 53 mins
-
-Java                   227 hrs 43 mins       ▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░░░░   55.00 %
-JavaScript             75 hrs 13 mins        ▓▓▓▓▒░░░░░░░░░░░░░░░░░░░░   18.17 %
-Kotlin                 36 hrs 35 mins        ▓▓░░░░░░░░░░░░░░░░░░░░░░░   08.84 %
-HTML                   29 hrs 23 mins        ▓▓░░░░░░░░░░░░░░░░░░░░░░░   07.10 %
-Java Properties        11 hrs 2 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   02.67 %
-Properties             9 hrs 46 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   02.36 %
-XML                    5 hrs 46 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.39 %
-Groovy                 3 hrs                 ░░░░░░░░░░░░░░░░░░░░░░░░░   00.73 %
-Python                 2 hrs 26 mins         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.59 %
-Gradle                 2 hrs 9 mins          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.52 %
-```
-
-<!--END_SECTION:waka-->
 
 
 ---
