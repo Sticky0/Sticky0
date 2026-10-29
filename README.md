@@ -23,9 +23,7 @@
 
 <img src="assets/cartel-caja.png" width="300" alt="Caja 01: su ticket"/>
 
-<a href="assets/ticket.pdf"><img src="assets/ticket.png" width="360" alt="Ticket de compra con mis lenguajes de GitHub"/></a>
-
-<sub><a href="assets/ticket.pdf">📄 Descargar el ticket en PDF</a></sub>
+<img src="assets/ticket.png" width="360" alt="Ticket de compra con mis lenguajes de GitHub"/>
 
 <br/><br/>
 
