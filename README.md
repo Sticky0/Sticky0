@@ -74,22 +74,15 @@
 
 ---
 
-## 🧾 TICKET DE COMPRA (Sobre mí)
+## 🧾 TICKET DE COMPRA
 
-```
- ┌────────────────────────────────────┐
- │        SUPER ISAAC · TICKET        │
- ├────────────────────────────────────┤
- │ 1 x Desarrollador Fullstack   1,00 │
- │ 1 x Ganas de aprender         ∞    │
- │ 1 x Amor por escribir código  ∞    │
- │ 1 x Racha en LeetCode         1,00 │
- ├────────────────────────────────────┤
- │ TOTAL                  1 DEV 💯    │
- │ PAGADO CON               CAFÉ ☕   │
- └────────────────────────────────────┘
-        ¡GRACIAS POR SU VISITA!
-```
+<div align="center">
+
+<a href="assets/ticket.pdf"><img src="assets/ticket.png" width="360" alt="Ticket de compra con mis lenguajes de GitHub"/></a>
+
+<sub>Se genera solo cada día con los lenguajes de mis repositorios · <a href="assets/ticket.pdf">Descargar en PDF</a></sub>
+
+</div>
 
 ## 📞 ATENCIÓN AL CLIENTE
 
