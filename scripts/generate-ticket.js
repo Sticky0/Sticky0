@@ -145,6 +145,40 @@ ${extra}
 </div></body></html>`;
 }
 
+// Fachada del supermercado para la cabecera del README.
+function renderBanner() {
+  const shelf = ['☕', '🍎', '🥖', '🧀', '🥫', '🍪', '🥛', '🍌', '🧃', '🍫', '🥚', '🍕']
+    .map((p) => `<span>${p}</span>`).join('');
+  return `<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;800;900&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:transparent;font-family:Rubik,Arial,sans-serif}
+.b{width:820px;margin:10px;border-radius:18px;overflow:hidden;border:6px solid #e30613;background:#fff8e1;box-sizing:border-box}
+.awning{height:64px;background:repeating-linear-gradient(90deg,#e30613 0 46px,#fff 46px 92px);position:relative}
+.awning:after{content:"";position:absolute;left:0;right:0;bottom:-22px;height:23px;
+ background:radial-gradient(circle at 23px 0,#e30613 22px,transparent 23px) 0 0/92px 23px repeat-x,
+ radial-gradient(circle at 23px 0,#fff 22px,transparent 23px) 46px 0/92px 23px repeat-x}
+.sign{margin:42px 34px 0;background:#ffd400;border-radius:14px;padding:18px 26px;display:flex;align-items:center;gap:22px;
+ box-shadow:0 8px 0 #c9a800}
+.cart{font-size:78px;line-height:1}
+.name{white-space:nowrap;font-weight:900;font-size:54px;color:#e30613;line-height:.95;letter-spacing:1px;text-shadow:3px 3px 0 #fff}
+.tag{font-weight:800;font-size:22px;color:#1a1a1a;margin-top:6px}
+.open{margin-left:auto;text-align:center;border:4px solid #00e676;border-radius:12px;padding:8px 12px;color:#00e676;
+ background:#102a1b;font-weight:900;font-size:22px;line-height:1.05;text-shadow:0 0 8px #00e676;box-shadow:0 0 14px #00e676;transform:rotate(4deg)}
+.open small{display:block;font-size:15px;color:#b9f6ca}
+.shelf{display:flex;justify-content:space-around;margin:26px 34px 0;padding:0 0 6px;border-bottom:10px solid #8d5a2b;font-size:38px}
+.strip{margin-top:22px;background:#1a1a1a;color:#ffd400;font-weight:800;font-size:20px;letter-spacing:3px;padding:12px 0;text-align:center;white-space:nowrap}
+.strip b{color:#fff}
+</style></head><body><div class="b">
+<div class="awning"></div>
+<div class="sign"><div class="cart">🛒</div>
+<div><div class="name">SUPER ISAAC</div><div class="tag">Fullstack Developer · España 🇪🇸</div></div>
+<div class="open">ABIERTO<br>24H<small>siempre</small></div></div>
+<div class="shelf">${shelf}</div>
+<div class="strip">PRODUCTOS FRESCOS DE CÓDIGO <b>·</b> SIEMPRE APRENDIENDO</div>
+</div></body></html>`;
+}
+
 // Lista de la compra (tech stack) escrita a mano en un pósit.
 const SHOPPING_LIST = [
   ['🥩 Carnicería', ['Java ★', 'JavaScript', 'Kotlin', 'Python', 'PHP', 'C / C++', 'HTML5', 'Shell y PowerShell']],
@@ -203,20 +237,22 @@ function renderOffers(stats) {
     .map((i) => `<div class="lang"><span class="ln">${esc(i.name)}</span><span class="bar"><i style="width:${i.cents / 100}%"></i></span><span class="pct">${euros(i.cents)}%</span></div>`)
     .join('\n');
 
-  return `<!doctype html><html><head><meta charset="utf-8"><style>
-body{margin:0;background:transparent;font-family:"Arial Black","Helvetica Neue",Arial,sans-serif}
+  return `<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;800;900&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:transparent;font-family:Rubik,Arial,sans-serif;font-weight:800}
 .f{width:820px;margin:10px;background:#ffd400;border:6px solid #e30613;border-radius:18px;padding:22px 24px 26px;box-sizing:border-box;color:#1a1a1a}
 .top{display:flex;justify-content:space-between;align-items:center}
 h1{margin:0;font-size:40px;color:#e30613;letter-spacing:1px;text-transform:uppercase}
 .badge{background:#e30613;color:#fff;font-size:18px;padding:10px 16px;border-radius:50%;transform:rotate(8deg);text-align:center;line-height:1.1}
-.lead{font-family:Arial,sans-serif;font-weight:bold;margin:2px 0 18px}
+.lead{font-weight:500;margin:2px 0 18px}
 .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
 .tag{background:#fff;border-radius:10px;padding:10px 12px;border:2px dashed #e30613}
-.n{font-size:13px;color:#e30613}.sub{font-family:Arial,sans-serif;font-size:12px;color:#555}
+.n{font-size:13px;color:#e30613}.sub{font-weight:500;font-size:12px;color:#555}
 .v{font-size:36px;line-height:1.15}.v small{font-size:14px;margin-left:4px}
 h2{font-size:20px;margin:20px 0 8px;color:#e30613}
 .langs{background:#fff;border-radius:10px;padding:12px 16px}
-.lang{display:flex;align-items:center;gap:12px;margin:5px 0;font-family:Arial,sans-serif;font-weight:bold}
+.lang{display:flex;align-items:center;gap:12px;margin:5px 0;font-weight:500}
 .ln{width:110px}.pct{width:70px;text-align:right}
 .bar{flex:1;height:14px;background:#f1f1f1;border-radius:7px;overflow:hidden}.bar i{display:block;height:100%;background:#e30613}
 </style></head><body><div class="f">
@@ -252,8 +288,14 @@ h2{font-size:20px;margin:20px 0 8px;color:#e30613}
   await page.pdf({ path: path.join(OUT, 'ticket.pdf'), width: '520px', height: `${height}px`, printBackground: true, pageRanges: '1' });
 
   const offers = await browser.newPage({ viewport: { width: 840, height: 100 }, deviceScaleFactor: 2 });
-  await offers.setContent(renderOffers(stats));
+  await offers.setContent(renderOffers(stats), { waitUntil: 'networkidle' });
+  await offers.evaluate(() => document.fonts.ready);
   await offers.locator('.f').screenshot({ path: path.join(OUT, 'ofertas.png'), omitBackground: true });
+
+  const banner = await browser.newPage({ viewport: { width: 840, height: 100 }, deviceScaleFactor: 2 });
+  await banner.setContent(renderBanner(), { waitUntil: 'networkidle' });
+  await banner.evaluate(() => document.fonts.ready);
+  await banner.locator('.b').screenshot({ path: path.join(OUT, 'cabecera.png'), omitBackground: true });
 
   const list = await browser.newPage({ viewport: { width: 820, height: 100 }, deviceScaleFactor: 2 });
   await list.setContent(renderList(), { waitUntil: 'networkidle' });
