@@ -1,6 +1,7 @@
 // Genera las imágenes del README a partir de los datos públicos de GitHub:
-// el ticket de compra (assets/ticket.png y assets/ticket.pdf) y el cartel
-// de ofertas con las estadísticas (assets/ofertas.png).
+// la fachada con el mapa de la tienda (assets/tienda.png), el ticket de compra
+// (assets/ticket.png y assets/ticket.pdf), el cartel de ofertas (assets/ofertas.png)
+// y los repos pineados como productos destacados (assets/destacado-N.png).
 const fs = require('fs');
 const path = require('path');
 const { chromium } = require('playwright');
@@ -65,6 +66,21 @@ async function fetchContributions() {
   };
 }
 
+// Repositorios pineados en el perfil (también por GraphQL).
+async function fetchPinned() {
+  if (!TOKEN) throw new Error('sin GITHUB_TOKEN');
+  const query = `query($login:String!){user(login:$login){pinnedItems(first:6,types:REPOSITORY){nodes{
+    ... on Repository{name description url stargazerCount forkCount primaryLanguage{name color}}}}}}`;
+  const res = await fetch('https://api.github.com/graphql', {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${TOKEN}`, 'User-Agent': USER },
+    body: JSON.stringify({ query, variables: { login: USER } }),
+  });
+  const { data, errors } = await res.json();
+  if (!res.ok || errors) throw new Error(`graphql: ${res.status}`);
+  return data.user.pinnedItems.nodes;
+}
+
 function streaks(days) {
   let longest = 0;
   let run = 0;
@@ -113,14 +129,16 @@ function render({ items, repos, stars, followers }, now) {
 
   return `<!doctype html><html><head><meta charset="utf-8"><style>
 body{margin:0;background:#e9e4da;display:flex;justify-content:center;padding:40px 0}
-.t{width:420px;background:#fffef9;padding:28px 26px 36px;font-family:"Courier New",Courier,monospace;font-size:15px;color:#222;
+.t{position:relative;overflow:hidden;width:420px;background:#fffef9;padding:64px 26px 36px;font-family:"Courier New",Courier,monospace;font-size:15px;color:#222;
  -webkit-mask:conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/18px 100% repeat-x}
-.c{text-align:center}.big{font-size:24px;font-weight:bold;letter-spacing:2px}
+.c{text-align:center}.big{font-size:24px;font-weight:bold;letter-spacing:2px;color:#6a1b9a}
+.slime{position:absolute;top:0;left:0}
 hr{border:0;border-top:2px dashed #555;margin:12px 0}
 .r{display:flex;justify-content:space-between;margin:3px 0}
 .h{font-weight:bold}.tot{font-size:20px;font-weight:bold}.s{font-size:12px;color:#444}
 .bar{height:56px;margin:14px auto 4px;width:300px;background:repeating-linear-gradient(90deg,#000 0 2px,#fffef9 2px 4px,#000 4px 5px,#fffef9 5px 8px,#000 8px 11px,#fffef9 11px 12px,#000 12px 13px,#fffef9 13px 16px)}
 </style></head><body><div class="t">
+${slime(472, 5, { band: 6, min: 8, max: 34, gap: 38 })}
 <div class="c big">🛒 StickyTM</div>
 <div class="c">Productos frescos de código</div>
 <div class="c s">C/ Fullstack, 1 · España<br>Contacto: isaacsanz@proton.me</div>
@@ -145,76 +163,99 @@ ${extra}
 </div></body></html>`;
 }
 
-// Fachada del supermercado para la cabecera del README.
-function renderBanner() {
-  const shelf = ['☕', '🍎', '🥖', '🧀', '🥫', '🍪', '🥛', '🍌', '🧃', '🍫', '🥚', '🍕']
-    .map((p) => `<span>${p}</span>`).join('');
+// Mejunje morado que gotea: una franja con gotas que cuelgan, fundidas con un filtro "goo".
+function slime(width, seed, { band = 16, min = 18, max = 70, gap = 46, rounded = false } = {}) {
+  let r = seed;
+  const rnd = () => ((r = (r * 9301 + 49297) % 233280) / 233280);
+  const count = Math.max(1, Math.round(width / gap));
+  const pad = rounded ? 16 : 0;
+  const height = band + max + 40;
+  const id = `goo${seed}`;
+  // Sin bordes redondeados la franja se sale por los lados para cubrir todo el ancho.
+  let blobs = rounded
+    ? `<rect x="10" y="0" width="${width - 20}" height="${band}" rx="${band / 2}"/>`
+    : `<rect x="-20" y="-20" width="${width + 40}" height="${band + 20}"/>`;
+  let shine = '';
+  for (let i = 0; i < count; i++) {
+    const x = pad + ((i + 0.2 + rnd() * 0.6) * (width - 2 * pad)) / count;
+    const w = 9 + rnd() * 14;
+    const len = band + min + rnd() * (max - min);
+    blobs += `<rect x="${x - w / 2}" y="0" width="${w}" height="${len}" rx="${w / 2}"/>`;
+    blobs += `<circle cx="${x}" cy="${len - w * 0.3}" r="${w * 0.68}"/>`;
+    shine += `<ellipse cx="${x - w * 0.22}" cy="${len - w * 0.55}" rx="${w * 0.16}" ry="${w * 0.26}" fill="#fff" opacity=".55"/>`;
+    if (rnd() < 0.3) blobs += `<circle cx="${x}" cy="${len + 14 + rnd() * 10}" r="${w * 0.36}"/>`;
+  }
+  return `<svg class="slime" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" xmlns="http://www.w3.org/2000/svg">
+<defs><filter id="${id}" x="-10%" y="-10%" width="120%" height="130%"><feGaussianBlur stdDeviation="5"/><feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 22 -9"/></filter>
+<linearGradient id="${id}g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6a1b9a"/><stop offset="1" stop-color="#ab47bc"/></linearGradient></defs>
+<g filter="url(#${id})" fill="url(#${id}g)">${blobs}</g>
+${rounded ? '' : `<rect x="0" y="3" width="${width}" height="3" fill="#fff" opacity=".25"/>`}${shine}</svg>`;
+}
+
+// Pasillos del supermercado (tech stack): cada sección del mapa con su color.
+const AISLES = [
+  { name: 'Carnicería', icon: '🥩', note: 'Lenguajes', color: '#e53935', items: ['Java ★', 'JavaScript', 'Kotlin', 'Python', 'PHP', 'C / C++', 'HTML5', 'Shell', 'PowerShell'] },
+  { name: 'Frutería', icon: '🥦', note: 'Frameworks', color: '#43a047', items: ['Spring', 'Hibernate', 'JavaFX', 'Symfony', 'AngularJS', 'Bootstrap', 'WordPress'] },
+  { name: 'Lácteos', icon: '🧀', note: 'Datos y cloud', color: '#1e88e5', items: ['MySQL', 'MongoDB', 'SQLite', 'Firebase', 'AWS'] },
+  { name: 'Droguería', icon: '🧰', note: 'Herramientas', color: '#fb8c00', items: ['Git', 'GitHub', 'Bitbucket', 'Jira', 'Docker', 'Apache'] },
+];
+
+// Fachada + mapa de la tienda en un solo bloque para la cabecera del README.
+function renderStore() {
+  const aisles = AISLES.map(
+    (a, n) => `<div class="aisle" style="--c:${a.color}">
+<div class="ah"><span class="num">${n + 1}</span>${a.icon} ${a.name}<small>${a.note}</small></div>
+<div class="shelf">${a.items.map((i) => `<span class="p">${esc(i)}</span>`).join('')}</div></div>`
+  ).join('\n');
   return `<!doctype html><html><head><meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;800;900&display=swap" rel="stylesheet">
 <style>
 body{margin:0;background:transparent;font-family:Rubik,Arial,sans-serif}
-.b{width:820px;margin:10px;border-radius:18px;overflow:hidden;border:6px solid #e30613;background:#fff8e1;box-sizing:border-box}
+.b{position:relative;width:820px;margin:10px;border-radius:18px;overflow:hidden;border:6px solid #7b1fa2;background:#fff8e1;box-sizing:border-box}
+.slime{position:absolute;left:0;pointer-events:none}
+.b>.slime{top:78px;z-index:2}
 .awning{height:64px;background:repeating-linear-gradient(90deg,#e30613 0 46px,#fff 46px 92px);position:relative}
 .awning:after{content:"";position:absolute;left:0;right:0;bottom:-22px;height:23px;
  background:radial-gradient(circle at 23px 0,#e30613 22px,transparent 23px) 0 0/92px 23px repeat-x,
  radial-gradient(circle at 23px 0,#fff 22px,transparent 23px) 46px 0/92px 23px repeat-x}
-.sign{margin:42px 34px 0;background:#ffd400;border-radius:14px;padding:18px 26px;display:flex;align-items:center;gap:22px;
+.sign{position:relative;margin:52px 34px 0;background:#ffd400;border-radius:14px;padding:22px 26px;display:flex;align-items:center;gap:22px;
  box-shadow:0 8px 0 #c9a800}
 .cart{font-size:78px;line-height:1}
-.name{white-space:nowrap;font-weight:900;font-size:54px;color:#e30613;line-height:.95;letter-spacing:1px;text-shadow:3px 3px 0 #fff}
-.tag{font-weight:800;font-size:22px;color:#1a1a1a;margin-top:6px}
+.name{white-space:nowrap;font-weight:900;font-size:58px;line-height:.95;letter-spacing:1px;color:#8e24aa;text-shadow:0 2px 0 #4a148c,3px 4px 0 #fff}
+.tag{font-weight:800;font-size:22px;color:#1a1a1a;margin-top:8px}
 .open{margin-left:auto;text-align:center;border:4px solid #00e676;border-radius:12px;padding:8px 12px;color:#00e676;
  background:#102a1b;font-weight:900;font-size:22px;line-height:1.05;text-shadow:0 0 8px #00e676;box-shadow:0 0 14px #00e676;transform:rotate(4deg)}
 .open small{display:block;font-size:15px;color:#b9f6ca}
-.shelf{display:flex;justify-content:space-around;margin:26px 34px 0;padding:0 0 6px;border-bottom:10px solid #8d5a2b;font-size:38px}
-.strip{margin-top:22px;background:#1a1a1a;color:#ffd400;font-weight:800;font-size:20px;letter-spacing:3px;padding:12px 0;text-align:center;white-space:nowrap}
+.map{margin:30px 34px 0;border:4px solid #4a148c;border-radius:14px;padding:16px;
+ background:#fffdf5 repeating-conic-gradient(#f2ead6 0 25%,transparent 0 50%) 0 0/36px 36px}
+.mt{display:flex;justify-content:space-between;align-items:center;font-weight:900;font-size:22px;color:#4a148c;margin:0 4px 12px}
+.mt small{font-weight:500;font-size:14px;color:#555}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.aisle{background:#fff;border-radius:12px;border:3px solid var(--c);overflow:hidden}
+.ah{display:flex;align-items:center;gap:8px;background:var(--c);color:#fff;font-weight:900;font-size:20px;padding:8px 12px}
+.ah small{margin-left:auto;font-weight:500;font-size:13px;opacity:.9}
+.num{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;background:#fff;color:var(--c);font-size:14px}
+.shelf{display:flex;flex-wrap:wrap;gap:6px;padding:12px 12px 10px;border-bottom:8px solid #8d5a2b;min-height:70px;align-content:flex-start}
+.p{background:#faf6ea;border:2px solid var(--c);border-radius:8px;padding:3px 9px;font-weight:800;font-size:15px;color:#1a1a1a}
+.floor{display:flex;justify-content:space-between;align-items:center;margin-top:14px;font-weight:800;font-size:16px}
+.door{background:#4a148c;color:#fff;padding:8px 14px;border-radius:10px}
+.here{color:#e30613}
+.till{background:#ffd400;color:#1a1a1a;padding:8px 14px;border-radius:10px;border:3px solid #1a1a1a}
+.strip{margin-top:22px;background:#4a148c;color:#ffd400;font-weight:800;font-size:20px;letter-spacing:3px;padding:12px 0;text-align:center;white-space:nowrap}
 .strip b{color:#fff}
 </style></head><body><div class="b">
 <div class="awning"></div>
+${slime(808, 7, { band: 6, min: 10, max: 56, gap: 40 })}
 <div class="sign"><div class="cart">🛒</div>
 <div><div class="name">StickyTM</div><div class="tag">Fullstack Developer · España 🇪🇸</div></div>
 <div class="open">ABIERTO<br>24H<small>siempre</small></div></div>
-<div class="shelf">${shelf}</div>
-<div class="strip">PRODUCTOS FRESCOS DE CÓDIGO <b>·</b> SIEMPRE APRENDIENDO</div>
+<div class="map">
+<div class="mt"><span>🗺️ MAPA DE LA TIENDA</span><small>Todo lo que encontrarás en mis pasillos</small></div>
+<div class="grid">${aisles}</div>
+<div class="floor"><span class="door">🚪 ENTRADA</span><span class="here">📍 Usted está aquí</span><span class="till">🧾 CAJA 01 · ticket abajo ⬇</span></div>
+</div>
+<div class="strip">CÓDIGO FRESCO Y PEGAJOSO <b>·</b> SIEMPRE APRENDIENDO</div>
 </div></body></html>`;
-}
-
-// Lista de la compra (tech stack) escrita a mano en un pósit.
-const SHOPPING_LIST = [
-  ['🥩 Carnicería', ['Java ★', 'JavaScript', 'Kotlin', 'Python', 'PHP', 'C / C++', 'HTML5', 'Shell y PowerShell']],
-  ['🥦 Frutería', ['Spring', 'Hibernate', 'JavaFX', 'Symfony', 'AngularJS', 'Bootstrap', 'WordPress']],
-  ['🧀 Lácteos', ['MySQL', 'MongoDB', 'SQLite', 'Firebase', 'AWS']],
-  ['🧰 Droguería', ['Git y GitHub', 'Bitbucket', 'Jira', 'Docker', 'Apache']],
-];
-
-function renderList() {
-  const sections = SHOPPING_LIST.map(
-    ([title, items]) => `<div class="sec"><h2>${title}</h2>${items.map((i) => `<div class="it"><span class="box">✓</span>${esc(i)}</div>`).join('')}</div>`
-  ).join('\n');
-  return `<!doctype html><html><head><meta charset="utf-8">
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&display=swap" rel="stylesheet">
-<style>
-body{margin:0;background:transparent}
-.wrap{padding:40px 30px 30px;width:760px}
-.note{position:relative;transform:rotate(-1.5deg);padding:46px 40px 36px;color:#2b2b6e;
- font-family:Caveat,"Comic Sans MS",cursive;font-size:27px;
- background:linear-gradient(180deg,#fff27a 0%,#ffe94d 100%);
- box-shadow:0 18px 20px -12px rgba(0,0,0,.45),0 2px 4px rgba(0,0,0,.15)}
-.note:after{content:"";position:absolute;right:0;bottom:0;width:48px;height:48px;
- background:linear-gradient(135deg,#e6cf2f 0 50%,transparent 50%);box-shadow:-3px -3px 6px rgba(0,0,0,.12)}
-.tape{position:absolute;top:-16px;left:50%;width:150px;height:36px;margin-left:-75px;transform:rotate(2deg);
- background:rgba(255,255,255,.55);box-shadow:0 1px 3px rgba(0,0,0,.15)}
-h1{margin:0 0 14px;font-size:50px;text-align:center;color:#c0262d}
-.cols{display:grid;grid-template-columns:1fr 1fr;gap:6px 40px}
-h2{margin:10px 0 2px;font-size:33px;text-decoration:underline;text-decoration-thickness:2px}
-.it{display:flex;align-items:center;gap:10px;line-height:1.25}
-.box{display:inline-flex;width:20px;height:20px;border:2px solid #2b2b6e;border-radius:4px;align-items:center;justify-content:center;font-size:22px;color:#c0262d}
-.foot{margin-top:18px;text-align:center;font-size:28px;color:#c0262d}
-</style></head><body><div class="wrap"><div class="note"><div class="tape"></div>
-<h1>Lista de la compra 🛒</h1>
-<div class="cols">${sections}</div>
-<div class="foot">☐ y mañana… ¡algo nuevo que aprender!</div>
-</div></div></body></html>`;
 }
 
 // Cartel de ofertas: cada estadística es una etiqueta de precio.
@@ -241,7 +282,8 @@ function renderOffers(stats) {
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;800;900&display=swap" rel="stylesheet">
 <style>
 body{margin:0;background:transparent;font-family:Rubik,Arial,sans-serif;font-weight:800}
-.f{width:820px;margin:10px;background:#ffd400;border:6px solid #e30613;border-radius:18px;padding:22px 24px 26px;box-sizing:border-box;color:#1a1a1a}
+.f{position:relative;overflow:hidden;width:820px;margin:10px;background:#ffd400;border:6px solid #7b1fa2;border-radius:18px;padding:62px 24px 26px;box-sizing:border-box;color:#1a1a1a}
+.slime{position:absolute;top:0;left:0;pointer-events:none}
 .top{display:flex;justify-content:space-between;align-items:center}
 h1{margin:0;font-size:40px;color:#e30613;letter-spacing:1px;text-transform:uppercase}
 .badge{background:#e30613;color:#fff;font-size:18px;padding:10px 16px;border-radius:50%;transform:rotate(8deg);text-align:center;line-height:1.1}
@@ -256,12 +298,67 @@ h2{font-size:20px;margin:20px 0 8px;color:#e30613}
 .ln{width:110px}.pct{width:70px;text-align:right}
 .bar{flex:1;height:14px;background:#f1f1f1;border-radius:7px;overflow:hidden}.bar i{display:block;height:100%;background:#e30613}
 </style></head><body><div class="f">
+${slime(808, 11, { band: 8, min: 8, max: 40, gap: 50 })}
 <div class="top"><h1>🏷️ Ofertas de la semana</h1><div class="badge">¡SOLO<br>HOY!</div></div>
 <div class="lead">Estadísticas frescas de github.com/${esc(USER)}</div>
 <div class="grid">${tags}</div>
 <h2>🥇 LOS MÁS VENDIDOS (lenguajes)</h2>
 <div class="langs">${bars}</div>
 </div></body></html>`;
+}
+
+// Repo pineado como producto destacado en la estantería.
+function renderPinned(repo, n) {
+  const lang = repo.primaryLanguage || { name: 'Código', color: '#8e24aa' };
+  const desc = repo.description || 'Producto artesanal, sin descripción en la etiqueta.';
+  return `<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;800;900&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:transparent;font-family:Rubik,Arial,sans-serif}
+.c{position:relative;overflow:hidden;width:400px;height:260px;margin:10px;box-sizing:border-box;border:6px solid #7b1fa2;border-radius:18px;
+ background:#fff8e1;display:flex;flex-direction:column}
+.slime{position:absolute;top:0;left:0;z-index:2}
+.box{position:relative;margin:34px 18px 0;flex:1;background:#fff;border-radius:12px;border:3px solid ${lang.color};
+ box-shadow:0 6px 0 rgba(0,0,0,.12);overflow:hidden;display:flex;flex-direction:column}
+.band{background:${lang.color};height:14px}
+.in{padding:10px 14px 0;flex:1;display:flex;flex-direction:column}
+.k{font-size:12px;font-weight:800;color:#7b1fa2;letter-spacing:2px}
+.name{font-weight:900;font-size:24px;color:#1a1a1a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin:2px 0 6px}
+.desc{font-weight:500;font-size:14px;color:#444;line-height:1.3;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.foot{display:flex;align-items:center;justify-content:space-between;margin-top:auto;padding:8px 0 10px}
+.lang{display:flex;align-items:center;gap:6px;font-weight:800;font-size:14px}
+.dot{width:12px;height:12px;border-radius:50%;background:${lang.color};border:1px solid rgba(0,0,0,.2)}
+.price{background:#ffd400;border:2px dashed #e30613;border-radius:8px;padding:3px 10px;font-weight:900;font-size:16px;color:#e30613}
+.sticker{position:absolute;right:-6px;top:20px;z-index:3;background:#e30613;color:#fff;font-weight:900;font-size:13px;
+ padding:7px 10px;border-radius:50%;transform:rotate(12deg);text-align:center;line-height:1.05;box-shadow:0 2px 4px rgba(0,0,0,.25)}
+.shelf{height:10px;background:#8d5a2b;margin:10px 0 0}
+</style></head><body><div class="c">
+${slime(388, 20 + n, { band: 6, min: 6, max: 24, gap: 40 })}
+<div class="sticker">⭐ TOP<br>VENTAS</div>
+<div class="box"><div class="band"></div><div class="in">
+<div class="k">PRODUCTO DESTACADO Nº${n}</div>
+<div class="name">${esc(repo.name)}</div>
+<div class="desc">${esc(desc)}</div>
+<div class="foot"><span class="lang"><span class="dot"></span>${esc(lang.name)}</span>
+<span class="price">★ ${repo.stargazerCount} · ${repo.forkCount} forks</span></div>
+</div></div>
+<div class="shelf"></div>
+</div></body></html>`;
+}
+
+// Reescribe la sección de destacados del README con una imagen enlazada por repo.
+function updateReadmePinned(repos) {
+  const file = path.join(__dirname, '..', 'README.md');
+  const start = '<!--START_SECTION:destacados-->';
+  const end = '<!--END_SECTION:destacados-->';
+  const readme = fs.readFileSync(file, 'utf8');
+  const a = readme.indexOf(start);
+  const b = readme.indexOf(end);
+  if (a < 0 || b < 0) return;
+  const cards = repos
+    .map((r, i) => `<a href="${r.url}"><img src="assets/destacado-${i + 1}.png" width="350" alt="${esc(r.name)}"/></a>`)
+    .join('\n');
+  fs.writeFileSync(file, `${readme.slice(0, a + start.length)}\n${cards}\n${readme.slice(b)}`);
 }
 
 (async () => {
@@ -276,6 +373,12 @@ h2{font-size:20px;margin:20px 0 8px;color:#e30613}
     Object.assign(stats, await fetchContributions());
   } catch (e) {
     console.warn(`No se pudieron leer las contribuciones (${e.message}).`);
+  }
+  let pinned = null;
+  try {
+    pinned = await fetchPinned();
+  } catch (e) {
+    console.warn(`No se pudieron leer los repos pineados (${e.message}); se dejan como están.`);
   }
   const html = render({ ...stats, items: toItems(stats.languages) }, new Date());
 
@@ -292,15 +395,21 @@ h2{font-size:20px;margin:20px 0 8px;color:#e30613}
   await offers.evaluate(() => document.fonts.ready);
   await offers.locator('.f').screenshot({ path: path.join(OUT, 'ofertas.png'), omitBackground: true });
 
-  const banner = await browser.newPage({ viewport: { width: 840, height: 100 }, deviceScaleFactor: 2 });
-  await banner.setContent(renderBanner(), { waitUntil: 'networkidle' });
-  await banner.evaluate(() => document.fonts.ready);
-  await banner.locator('.b').screenshot({ path: path.join(OUT, 'cabecera.png'), omitBackground: true });
+  const store = await browser.newPage({ viewport: { width: 840, height: 100 }, deviceScaleFactor: 2 });
+  await store.setContent(renderStore(), { waitUntil: 'networkidle' });
+  await store.evaluate(() => document.fonts.ready);
+  await store.locator('.b').screenshot({ path: path.join(OUT, 'tienda.png'), omitBackground: true });
 
-  const list = await browser.newPage({ viewport: { width: 820, height: 100 }, deviceScaleFactor: 2 });
-  await list.setContent(renderList(), { waitUntil: 'networkidle' });
-  await list.evaluate(() => document.fonts.ready);
-  await list.locator('.wrap').screenshot({ path: path.join(OUT, 'lista.png'), omitBackground: true });
+  if (pinned) {
+    for (const f of fs.readdirSync(OUT)) if (/^destacado-\d+\.png$/.test(f)) fs.unlinkSync(path.join(OUT, f));
+    for (const [i, repo] of pinned.entries()) {
+      const card = await browser.newPage({ viewport: { width: 420, height: 100 }, deviceScaleFactor: 2 });
+      await card.setContent(renderPinned(repo, i + 1), { waitUntil: 'networkidle' });
+      await card.evaluate(() => document.fonts.ready);
+      await card.locator('.c').screenshot({ path: path.join(OUT, `destacado-${i + 1}.png`), omitBackground: true });
+    }
+    updateReadmePinned(pinned);
+  }
   await browser.close();
   console.log('Imágenes generadas en assets/');
 })();
