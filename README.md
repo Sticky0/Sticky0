@@ -19,41 +19,11 @@
 
 ## 📝 MI LISTA DE LA COMPRA
 
-> Esto es lo que llevo siempre en el carro:
+<div align="center">
 
-### 🥩 Sección Carnicería (Lenguajes)
-- [x] ☕ Java &nbsp;·&nbsp; *el producto estrella*
-- [x] 🟨 JavaScript
-- [x] 🟣 Kotlin
-- [x] 🐍 Python
-- [x] 🐘 PHP
-- [x] ⚙️ C / C++
-- [x] 🌐 HTML5
-- [x] 🐚 Shell Script y PowerShell
+<img src="assets/lista.png" width="560" alt="Pósit con mi lista de la compra: lenguajes, frameworks, bases de datos y herramientas"/>
 
-### 🥦 Sección Frutería (Frameworks y librerías)
-- [x] 🍃 Spring
-- [x] 💤 Hibernate
-- [x] 🎨 JavaFX
-- [x] 🎼 Symfony
-- [x] 🅰️ AngularJS
-- [x] 🅱️ Bootstrap
-- [x] 📰 WordPress
-
-### 🧀 Sección Lácteos (Bases de datos y cloud)
-- [x] 🐬 MySQL
-- [x] 🍃 MongoDB
-- [x] 🪶 SQLite
-- [x] 🔥 Firebase
-- [x] ☁️ AWS
-
-### 🧰 Sección Droguería (Herramientas)
-- [x] 🌿 Git y GitHub
-- [x] 🪣 Bitbucket
-- [x] 📋 Jira
-- [x] 🐳 Docker
-- [x] 🪶 Apache
-- [ ] 🎯 *Pendiente de comprar: lo que toque aprender mañana*
+</div>
 
 <details>
 <summary>🏷️ Ver etiquetas de precio (badges)</summary>
