@@ -1,10 +1,99 @@
 <div align="center">
 
-# 👋 Hi, I'm Isaac
+# 🛒 SUPERMERCADO ISAAC 🛒
 
-### Fullstack Developer from Spain 🇪🇸
+### *"Productos frescos de código, cada día"*
 
-*I love writing code and learning new things every day.*
+```
+╔══════════════════════════════════════╗
+║        🛒  S U P E R   I S A A C  🛒       ║
+║   Fullstack Developer · Spain 🇪🇸          ║
+║──────────────────────────────────────║
+║   ABIERTO 24H · SIEMPRE APRENDIENDO   ║
+╚══════════════════════════════════════╝
+```
+
+</div>
+
+---
+
+## 📝 MI LISTA DE LA COMPRA
+
+> Esto es lo que llevo siempre en el carro:
+
+### 🥩 Sección Carnicería (Lenguajes)
+- [x] ☕ Java &nbsp;·&nbsp; *el producto estrella*
+- [x] 🟨 JavaScript
+- [x] 🟣 Kotlin
+- [x] 🐍 Python
+- [x] 🐘 PHP
+- [x] ⚙️ C / C++
+- [x] 🌐 HTML5
+- [x] 🐚 Shell Script y PowerShell
+
+### 🥦 Sección Frutería (Frameworks y librerías)
+- [x] 🍃 Spring
+- [x] 💤 Hibernate
+- [x] 🎨 JavaFX
+- [x] 🎼 Symfony
+- [x] 🅰️ AngularJS
+- [x] 🅱️ Bootstrap
+- [x] 📰 WordPress
+
+### 🧀 Sección Lácteos (Bases de datos y cloud)
+- [x] 🐬 MySQL
+- [x] 🍃 MongoDB
+- [x] 🪶 SQLite
+- [x] 🔥 Firebase
+- [x] ☁️ AWS
+
+### 🧰 Sección Droguería (Herramientas)
+- [x] 🌿 Git y GitHub
+- [x] 🪣 Bitbucket
+- [x] 📋 Jira
+- [x] 🐳 Docker
+- [x] 🪶 Apache
+- [ ] 🎯 *Pendiente de comprar: lo que toque aprender mañana*
+
+<details>
+<summary>🏷️ Ver etiquetas de precio (badges)</summary>
+<br/>
+
+<img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
+<img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"/>
+<img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white"/>
+<img src="https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"/>
+<img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white"/>
+<img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
+<img src="https://img.shields.io/badge/MongoDB-4ea94b?style=for-the-badge&logo=mongodb&logoColor=white"/>
+<img src="https://img.shields.io/badge/Docker-0db7ed?style=for-the-badge&logo=docker&logoColor=white"/>
+<img src="https://img.shields.io/badge/Git-F05033?style=for-the-badge&logo=git&logoColor=white"/>
+<img src="https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white"/>
+
+</details>
+
+---
+
+## 🧾 TICKET DE COMPRA (Sobre mí)
+
+```
+ ┌────────────────────────────────────┐
+ │        SUPER ISAAC · TICKET        │
+ ├────────────────────────────────────┤
+ │ 1 x Desarrollador Fullstack   1,00 │
+ │ 1 x Ganas de aprender         ∞    │
+ │ 1 x Amor por escribir código  ∞    │
+ │ 1 x Racha en LeetCode         1,00 │
+ ├────────────────────────────────────┤
+ │ TOTAL                  1 DEV 💯    │
+ │ PAGADO CON               CAFÉ ☕   │
+ └────────────────────────────────────┘
+        ¡GRACIAS POR SU VISITA!
+```
+
+## 📞 ATENCIÓN AL CLIENTE
+
+<div align="center">
 
 <a href="https://www.linkedin.com/in/isaacsanz"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
 <a href="https://leetcode.com/isaac-sanz/"><img src="https://img.shields.io/badge/LeetCode-000000?style=for-the-badge&logo=leetcode&logoColor=FFA116" alt="LeetCode"/></a>
@@ -14,67 +103,7 @@
 
 ---
 
-## 💫 About Me
-
-- 💻 Fullstack developer, mostly working with **Java**, **JavaScript** and **Kotlin**
-- 🌱 Always learning new features, tools and best practices
-- 🧩 Enjoy solving problems on LeetCode
-- 📫 Reach me anytime: **isaacsanz@proton.me**
-
-## 🛠️ Tech Stack
-
-**Languages**
-
-<p>
-<img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
-<img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"/>
-<img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white"/>
-<img src="https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"/>
-<img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white"/>
-<img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white"/>
-<img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"/>
-<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
-<img src="https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white"/>
-<img src="https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white"/>
-</p>
-
-**Frameworks & Libraries**
-
-<p>
-<img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white"/>
-<img src="https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=hibernate&logoColor=white"/>
-<img src="https://img.shields.io/badge/JavaFX-FF0000?style=for-the-badge&logo=javafx&logoColor=white"/>
-<img src="https://img.shields.io/badge/Symfony-000000?style=for-the-badge&logo=symfony&logoColor=white"/>
-<img src="https://img.shields.io/badge/AngularJS-E23237?style=for-the-badge&logo=angularjs&logoColor=white"/>
-<img src="https://img.shields.io/badge/Bootstrap-8511FA?style=for-the-badge&logo=bootstrap&logoColor=white"/>
-<img src="https://img.shields.io/badge/WordPress-117AC9?style=for-the-badge&logo=wordpress&logoColor=white"/>
-</p>
-
-**Databases & Cloud**
-
-<p>
-<img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
-<img src="https://img.shields.io/badge/MongoDB-4ea94b?style=for-the-badge&logo=mongodb&logoColor=white"/>
-<img src="https://img.shields.io/badge/SQLite-07405e?style=for-the-badge&logo=sqlite&logoColor=white"/>
-<img src="https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=firebase&logoColor=white"/>
-<img src="https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white"/>
-</p>
-
-**Tools & DevOps**
-
-<p>
-<img src="https://img.shields.io/badge/Git-F05033?style=for-the-badge&logo=git&logoColor=white"/>
-<img src="https://img.shields.io/badge/GitHub-121011?style=for-the-badge&logo=github&logoColor=white"/>
-<img src="https://img.shields.io/badge/Bitbucket-0047B3?style=for-the-badge&logo=bitbucket&logoColor=white"/>
-<img src="https://img.shields.io/badge/Jira-0A0FFF?style=for-the-badge&logo=jira&logoColor=white"/>
-<img src="https://img.shields.io/badge/Docker-0db7ed?style=for-the-badge&logo=docker&logoColor=white"/>
-<img src="https://img.shields.io/badge/Apache-D42029?style=for-the-badge&logo=apache&logoColor=white"/>
-<img src="https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white"/>
-</p>
-
----
-
-## 📊 GitHub Stats
+## 📊 OFERTAS DE LA SEMANA (GitHub Stats)
 
 <div align="center">
 
@@ -85,7 +114,7 @@
 
 </div>
 
-## 🏆 GitHub Trophies
+## 🏆 PRODUCTOS PREMIADOS
 
 <div align="center">
 
@@ -93,17 +122,17 @@
 
 </div>
 
-
-
 ---
 
 <div align="center">
 
-### ✍️ Random Dev Quote
+### 💬 Frase del día (cartel de la entrada)
 
 <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical"/>
 
 <br/>
+
+🛒 **¡Gracias por su visita! Vuelva pronto.** 🛒
 
 <a href="https://visitcount.itsvg.in"><img src="https://visitcount.itsvg.in/api?id=Sticky0&icon=0&color=0"/></a>
 
