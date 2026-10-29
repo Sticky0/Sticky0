@@ -2,12 +2,6 @@
 
 <img src="assets/tienda.png" width="720" alt="Supermercado StickyTM: fachada y mapa de la tienda con mis lenguajes, frameworks, bases de datos y herramientas"/>
 
-<br/><br/>
-
-<a href="https://www.linkedin.com/in/isaacsanz"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-<a href="https://leetcode.com/isaac-sanz/"><img src="https://img.shields.io/badge/LeetCode-000000?style=for-the-badge&logo=leetcode&logoColor=FFA116" alt="LeetCode"/></a>
-<a href="mailto:isaacsanz@proton.me"><img src="https://img.shields.io/badge/Proton_Mail-6D4AFF?style=for-the-badge&logo=protonmail&logoColor=white" alt="Email"/></a>
-
 <br/>
 
 <img src="assets/cartel-destacados.png" width="300" alt="Pasillo 1: destacados"/>
@@ -37,6 +31,8 @@
 
 🛒 **¡Gracias por su visita! Vuelva pronto.** 🛒
 
-<a href="https://visitcount.itsvg.in"><img src="https://visitcount.itsvg.in/api?id=Sticky0&icon=0&color=0" alt="Visitas"/></a>
+<a href="https://www.linkedin.com/in/isaacsanz"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+<a href="https://leetcode.com/isaac-sanz/"><img src="https://img.shields.io/badge/LeetCode-000000?style=for-the-badge&logo=leetcode&logoColor=FFA116" alt="LeetCode"/></a>
+<a href="mailto:isaacsanz@proton.me"><img src="https://img.shields.io/badge/Proton_Mail-6D4AFF?style=for-the-badge&logo=protonmail&logoColor=white" alt="Email"/></a>
 
 </div>
