@@ -145,14 +145,52 @@ ${extra}
 </div></body></html>`;
 }
 
+// Lista de la compra (tech stack) escrita a mano en un pósit.
+const SHOPPING_LIST = [
+  ['🥩 Carnicería', ['Java ★', 'JavaScript', 'Kotlin', 'Python', 'PHP', 'C / C++', 'HTML5', 'Shell y PowerShell']],
+  ['🥦 Frutería', ['Spring', 'Hibernate', 'JavaFX', 'Symfony', 'AngularJS', 'Bootstrap', 'WordPress']],
+  ['🧀 Lácteos', ['MySQL', 'MongoDB', 'SQLite', 'Firebase', 'AWS']],
+  ['🧰 Droguería', ['Git y GitHub', 'Bitbucket', 'Jira', 'Docker', 'Apache']],
+];
+
+function renderList() {
+  const sections = SHOPPING_LIST.map(
+    ([title, items]) => `<div class="sec"><h2>${title}</h2>${items.map((i) => `<div class="it"><span class="box">✓</span>${esc(i)}</div>`).join('')}</div>`
+  ).join('\n');
+  return `<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:transparent}
+.wrap{padding:40px 30px 30px;width:760px}
+.note{position:relative;transform:rotate(-1.5deg);padding:46px 40px 36px;color:#2b2b6e;
+ font-family:Caveat,"Comic Sans MS",cursive;font-size:27px;
+ background:linear-gradient(180deg,#fff27a 0%,#ffe94d 100%);
+ box-shadow:0 18px 20px -12px rgba(0,0,0,.45),0 2px 4px rgba(0,0,0,.15)}
+.note:after{content:"";position:absolute;right:0;bottom:0;width:48px;height:48px;
+ background:linear-gradient(135deg,#e6cf2f 0 50%,transparent 50%);box-shadow:-3px -3px 6px rgba(0,0,0,.12)}
+.tape{position:absolute;top:-16px;left:50%;width:150px;height:36px;margin-left:-75px;transform:rotate(2deg);
+ background:rgba(255,255,255,.55);box-shadow:0 1px 3px rgba(0,0,0,.15)}
+h1{margin:0 0 14px;font-size:50px;text-align:center;color:#c0262d}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:6px 40px}
+h2{margin:10px 0 2px;font-size:33px;text-decoration:underline;text-decoration-thickness:2px}
+.it{display:flex;align-items:center;gap:10px;line-height:1.25}
+.box{display:inline-flex;width:20px;height:20px;border:2px solid #2b2b6e;border-radius:4px;align-items:center;justify-content:center;font-size:22px;color:#c0262d}
+.foot{margin-top:18px;text-align:center;font-size:28px;color:#c0262d}
+</style></head><body><div class="wrap"><div class="note"><div class="tape"></div>
+<h1>Lista de la compra 🛒</h1>
+<div class="cols">${sections}</div>
+<div class="foot">☐ y mañana… ¡algo nuevo que aprender!</div>
+</div></div></body></html>`;
+}
+
 // Cartel de ofertas: cada estadística es una etiqueta de precio.
 function renderOffers(stats) {
   const fmt = (n) => (n == null ? '—' : new Intl.NumberFormat('es-ES').format(n));
   const tags = [
     ['CONTRIBUCIONES', 'último año', stats.contributions, 'uds'],
     ['COMMITS', 'último año', stats.commits, 'uds'],
-    ['RACHA ACTUAL', 'sin parar', stats.currentStreak, 'días'],
-    ['RACHA MÁXIMA', 'último año', stats.longestStreak, 'días'],
+    ['RACHA ACTUAL', 'sin parar', stats.currentStreak, stats.currentStreak === 1 ? 'día' : 'días'],
+    ['RACHA MÁXIMA', 'último año', stats.longestStreak, stats.longestStreak === 1 ? 'día' : 'días'],
     ['PULL REQUESTS', 'total', stats.prs, 'uds'],
     ['ISSUES', 'total', stats.issues, 'uds'],
     ['ESTRELLAS', 'en mis repos', stats.stars, '★'],
@@ -216,6 +254,11 @@ h2{font-size:20px;margin:20px 0 8px;color:#e30613}
   const offers = await browser.newPage({ viewport: { width: 840, height: 100 }, deviceScaleFactor: 2 });
   await offers.setContent(renderOffers(stats));
   await offers.locator('.f').screenshot({ path: path.join(OUT, 'ofertas.png'), omitBackground: true });
+
+  const list = await browser.newPage({ viewport: { width: 820, height: 100 }, deviceScaleFactor: 2 });
+  await list.setContent(renderList(), { waitUntil: 'networkidle' });
+  await list.evaluate(() => document.fonts.ready);
+  await list.locator('.wrap').screenshot({ path: path.join(OUT, 'lista.png'), omitBackground: true });
   await browser.close();
   console.log('Imágenes generadas en assets/');
 })();
