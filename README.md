@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/cabecera.png" width="720" alt="Fachada del Super Isaac: Fullstack Developer, España. Abierto 24h"/>
+<img src="assets/cabecera.png" width="720" alt="Fachada del supermercado StickyTM: Fullstack Developer, España. Abierto 24h"/>
 
 <br/><br/>
 
