@@ -253,7 +253,7 @@ ${slime(808, 7, { band: 6, min: 10, max: 56, gap: 40 })}
 <div class="grid">${aisles}</div>
 <div class="floor"><span class="door">🚪 ENTRADA</span><span class="here">📍 Usted está aquí</span><span class="till">🧾 CAJA 01 · ticket abajo ⬇</span></div>
 </div>
-<div class="strip">CÓDIGO FRESCO Y PEGAJOSO <b>·</b> SIEMPRE APRENDIENDO</div>
+<div class="strip">CÓDIGO FRESCO Y PEGAJOSO</div>
 </div></body></html>`;
 }
 
