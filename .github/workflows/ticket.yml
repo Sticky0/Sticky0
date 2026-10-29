@@ -1,0 +1,43 @@
+name: Ticket de compra
+
+on:
+  workflow_dispatch:
+  schedule:
+    # todos los días a las 00:30 UTC
+    - cron: "30 0 * * *"
+  push:
+    paths:
+      - scripts/generate-ticket.js
+      - .github/workflows/ticket.yml
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Instalar Playwright y fuentes
+        run: |
+          npm install --no-save playwright@1.48.2
+          npx playwright install --with-deps chromium
+          sudo apt-get install -y fonts-noto-color-emoji
+
+      - name: Generar ticket
+        run: node scripts/generate-ticket.js
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit si hay cambios
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898733+github-actions[bot]@users.noreply.github.com"
+          git add assets/ticket.png assets/ticket.pdf
+          git diff --cached --quiet || git commit -m "Actualizar ticket de compra"
+          git push
