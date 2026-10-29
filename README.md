@@ -19,6 +19,10 @@
 <sub>Mis repositorios pineados, recién salidos del horno</sub>
 
 <!--START_SECTION:destacados-->
+<a href="https://github.com/Sticky0/Glipper_Scripts"><img src="assets/destacado-1.png" width="350" alt="Glipper_Scripts"/></a>
+<a href="https://github.com/Sticky0/Acepta-el-reto"><img src="assets/destacado-2.png" width="350" alt="Acepta-el-reto"/></a>
+<a href="https://github.com/Sticky0/Leet-Code"><img src="assets/destacado-3.png" width="350" alt="Leet-Code"/></a>
+<a href="https://github.com/Sticky0/Atlas"><img src="assets/destacado-4.png" width="350" alt="Atlas"/></a>
 <!--END_SECTION:destacados-->
 
 ---
