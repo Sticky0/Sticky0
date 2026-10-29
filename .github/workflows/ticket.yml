@@ -6,6 +6,9 @@ on:
     # todos los días a las 00:30 UTC
     - cron: "30 0 * * *"
   push:
+    # solo en main, para que el bot no haga commits en otras ramas
+    # y no aparezcan conflictos con las imágenes al fusionar
+    branches: [main]
     paths:
       - scripts/generate-ticket.js
       - .github/workflows/ticket.yml
