@@ -96,14 +96,11 @@
 
 ---
 
-## 📊 OFERTAS DE LA SEMANA (GitHub Stats)
+## 📊 OFERTAS DE LA SEMANA
 
 <div align="center">
 
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=Sticky0&theme=radical&hide_border=true&include_all_commits=true&count_private=true&show_icons=true"/>
-<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sticky0&theme=radical&hide_border=true&layout=compact"/>
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Sticky0&theme=radical&hide_border=true"/>
+<img src="assets/ofertas.png" width="720" alt="Cartel de ofertas con mis estadísticas de GitHub"/>
 
 </div>
 
