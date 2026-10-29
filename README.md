@@ -1,54 +1,134 @@
-# 💫 About Me:
-Fullstack developer from Spain 🗣️ <br/>
-✌️ &emsp; Enjoy to do programming <br/>
- ❤️ &emsp; Love to writing code and learning new features<br/>
- 📧 &emsp; Reach me anytime: isaacsanz@proton.me<br/>
+<div align="center">
 
+# 🛒 SUPERMERCADO ISAAC 🛒
 
-## 🌐 Socials:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/isaacsanz?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app) 
-[![LeetCode](https://img.shields.io/badge/LeetCode-%23000000.svg?logo=leetcode&logoColor=white)](https://leetcode.com/isaac-sanz/)
+### *"Productos frescos de código, cada día"*
 
-
-# 💻 Tech Stack:
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white) ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white) ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white) ![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase) ![Angular.js](https://img.shields.io/badge/angular.js-%23E23237.svg?style=for-the-badge&logo=angularjs&logoColor=white) ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white) ![JavaFX](https://img.shields.io/badge/javafx-%23FF0000.svg?style=for-the-badge&logo=javafx&logoColor=white) ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white) ![Symfony](https://img.shields.io/badge/symfony-%23000000.svg?style=for-the-badge&logo=symfony&logoColor=white) ![WordPress](https://img.shields.io/badge/WordPress-%23117AC9.svg?style=for-the-badge&logo=WordPress&logoColor=white) ![Apache](https://img.shields.io/badge/apache-%23D42029.svg?style=for-the-badge&logo=apache&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white) ![Hibernate](https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=Hibernate&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Bitbucket](https://img.shields.io/badge/bitbucket-%230047B3.svg?style=for-the-badge&logo=bitbucket&logoColor=white) ![Jira](https://img.shields.io/badge/jira-%230A0FFF.svg?style=for-the-badge&logo=jira&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=Sticky0&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
-![](https://github-readme-streak-stats.herokuapp.com/?user=Sticky0&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=Sticky0&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
-
-## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=Sticky0&theme=radical&no-frame=true&no-bg=true&margin-w=4)
-
-### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
-
-### 🔝 Top Contributed Repo
-![](https://github-contributor-stats.vercel.app/api?username=Sticky0&limit=5&theme=dark&combine_all_yearly_contributions=true)
-
----
-[![](https://visitcount.itsvg.in/api?id=Sticky0&icon=0&color=0)](https://visitcount.itsvg.in)
-
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
-
- 
-<!--START_SECTION:waka-->
-
-```rust
-From: 23 June 2024 - To: 27 October 2026
-
-Total Time: 413 hrs 53 mins
-
-Java                   227 hrs 43 mins       ▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░░░░   55.00 %
-JavaScript             75 hrs 13 mins        ▓▓▓▓▒░░░░░░░░░░░░░░░░░░░░   18.17 %
-Kotlin                 36 hrs 35 mins        ▓▓░░░░░░░░░░░░░░░░░░░░░░░   08.84 %
-HTML                   29 hrs 23 mins        ▓▓░░░░░░░░░░░░░░░░░░░░░░░   07.10 %
-Java Properties        11 hrs 2 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   02.67 %
-Properties             9 hrs 46 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   02.36 %
-XML                    5 hrs 46 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.39 %
-Groovy                 3 hrs                 ░░░░░░░░░░░░░░░░░░░░░░░░░   00.73 %
-Python                 2 hrs 26 mins         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.59 %
-Gradle                 2 hrs 9 mins          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.52 %
+```
+╔══════════════════════════════════════╗
+║        🛒  S U P E R   I S A A C  🛒       ║
+║   Fullstack Developer · Spain 🇪🇸          ║
+║──────────────────────────────────────║
+║   ABIERTO 24H · SIEMPRE APRENDIENDO   ║
+╚══════════════════════════════════════╝
 ```
 
-<!--END_SECTION:waka-->
+</div>
+
+---
+
+## 📝 MI LISTA DE LA COMPRA
+
+> Esto es lo que llevo siempre en el carro:
+
+### 🥩 Sección Carnicería (Lenguajes)
+- [x] ☕ Java &nbsp;·&nbsp; *el producto estrella*
+- [x] 🟨 JavaScript
+- [x] 🟣 Kotlin
+- [x] 🐍 Python
+- [x] 🐘 PHP
+- [x] ⚙️ C / C++
+- [x] 🌐 HTML5
+- [x] 🐚 Shell Script y PowerShell
+
+### 🥦 Sección Frutería (Frameworks y librerías)
+- [x] 🍃 Spring
+- [x] 💤 Hibernate
+- [x] 🎨 JavaFX
+- [x] 🎼 Symfony
+- [x] 🅰️ AngularJS
+- [x] 🅱️ Bootstrap
+- [x] 📰 WordPress
+
+### 🧀 Sección Lácteos (Bases de datos y cloud)
+- [x] 🐬 MySQL
+- [x] 🍃 MongoDB
+- [x] 🪶 SQLite
+- [x] 🔥 Firebase
+- [x] ☁️ AWS
+
+### 🧰 Sección Droguería (Herramientas)
+- [x] 🌿 Git y GitHub
+- [x] 🪣 Bitbucket
+- [x] 📋 Jira
+- [x] 🐳 Docker
+- [x] 🪶 Apache
+- [ ] 🎯 *Pendiente de comprar: lo que toque aprender mañana*
+
+<details>
+<summary>🏷️ Ver etiquetas de precio (badges)</summary>
+<br/>
+
+<img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
+<img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"/>
+<img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white"/>
+<img src="https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"/>
+<img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white"/>
+<img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
+<img src="https://img.shields.io/badge/MongoDB-4ea94b?style=for-the-badge&logo=mongodb&logoColor=white"/>
+<img src="https://img.shields.io/badge/Docker-0db7ed?style=for-the-badge&logo=docker&logoColor=white"/>
+<img src="https://img.shields.io/badge/Git-F05033?style=for-the-badge&logo=git&logoColor=white"/>
+<img src="https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white"/>
+
+</details>
+
+---
+
+## 🧾 TICKET DE COMPRA
+
+<div align="center">
+
+<a href="assets/ticket.pdf"><img src="assets/ticket.png" width="360" alt="Ticket de compra con mis lenguajes de GitHub"/></a>
+
+<sub>Se genera solo cada día con los lenguajes de mis repositorios · <a href="assets/ticket.pdf">Descargar en PDF</a></sub>
+
+</div>
+
+## 📞 ATENCIÓN AL CLIENTE
+
+<div align="center">
+
+<a href="https://www.linkedin.com/in/isaacsanz"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+<a href="https://leetcode.com/isaac-sanz/"><img src="https://img.shields.io/badge/LeetCode-000000?style=for-the-badge&logo=leetcode&logoColor=FFA116" alt="LeetCode"/></a>
+<a href="mailto:isaacsanz@proton.me"><img src="https://img.shields.io/badge/Proton_Mail-6D4AFF?style=for-the-badge&logo=protonmail&logoColor=white" alt="Email"/></a>
+
+</div>
+
+---
+
+## 📊 OFERTAS DE LA SEMANA (GitHub Stats)
+
+<div align="center">
+
+<img height="180" src="https://github-readme-stats.vercel.app/api?username=Sticky0&theme=radical&hide_border=true&include_all_commits=true&count_private=true&show_icons=true"/>
+<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sticky0&theme=radical&hide_border=true&layout=compact"/>
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Sticky0&theme=radical&hide_border=true"/>
+
+</div>
+
+## 🏆 PRODUCTOS PREMIADOS
+
+<div align="center">
+
+<img src="https://github-profile-trophy.vercel.app/?username=Sticky0&theme=radical&no-frame=true&no-bg=true&margin-w=4"/>
+
+</div>
+
+---
+
+<div align="center">
+
+### 💬 Frase del día (cartel de la entrada)
+
+<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical"/>
+
+<br/>
+
+🛒 **¡Gracias por su visita! Vuelva pronto.** 🛒
+
+<a href="https://visitcount.itsvg.in"><img src="https://visitcount.itsvg.in/api?id=Sticky0&icon=0&color=0"/></a>
+
+</div>
+
+<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
