@@ -151,8 +151,8 @@ function renderOffers(stats) {
   const tags = [
     ['CONTRIBUCIONES', 'último año', stats.contributions, 'uds'],
     ['COMMITS', 'último año', stats.commits, 'uds'],
-    ['RACHA ACTUAL', 'sin parar', stats.currentStreak, 'días'],
-    ['RACHA MÁXIMA', 'último año', stats.longestStreak, 'días'],
+    ['RACHA ACTUAL', 'sin parar', stats.currentStreak, stats.currentStreak === 1 ? 'día' : 'días'],
+    ['RACHA MÁXIMA', 'último año', stats.longestStreak, stats.longestStreak === 1 ? 'día' : 'días'],
     ['PULL REQUESTS', 'total', stats.prs, 'uds'],
     ['ISSUES', 'total', stats.issues, 'uds'],
     ['ESTRELLAS', 'en mis repos', stats.stars, '★'],
