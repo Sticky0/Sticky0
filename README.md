@@ -23,9 +23,11 @@
 
 <img src="assets/cartel-caja.png" width="300" alt="Caja 01: su ticket"/>
 
+<br/>
+
 <img src="assets/ticket.png" width="360" alt="Ticket de compra con mis lenguajes de GitHub"/>
 
-<br/><br/>
+<br/>
 
 🛒 **¡Gracias por su visita! Vuelva pronto.** 🛒
 
