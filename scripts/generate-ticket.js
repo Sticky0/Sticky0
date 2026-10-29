@@ -1,6 +1,6 @@
 // Genera las imágenes del README a partir de los datos públicos de GitHub:
-// el ticket de compra (assets/ticket.png y assets/ticket.pdf) y el cartel
-// de ofertas con las estadísticas (assets/ofertas.png).
+// la fachada con el mapa de la tienda (assets/tienda.png), el ticket de compra
+// (assets/ticket.png y assets/ticket.pdf) y el cartel de ofertas (assets/ofertas.png).
 const fs = require('fs');
 const path = require('path');
 const { chromium } = require('playwright');
@@ -176,10 +176,21 @@ function slime(width, seed, { band = 16, min = 18, max = 70, gap = 46, rounded =
 ${rounded ? '' : `<rect x="0" y="3" width="${width}" height="3" fill="#fff" opacity=".25"/>`}${shine}</svg>`;
 }
 
-// Fachada del supermercado para la cabecera del README.
-function renderBanner() {
-  const shelf = ['☕', '🍎', '🥖', '🧀', '🥫', '🍪', '🥛', '🍌', '🧃', '🍫', '🥚', '🍕']
-    .map((p) => `<span>${p}</span>`).join('');
+// Pasillos del supermercado (tech stack): cada sección del mapa con su color.
+const AISLES = [
+  { name: 'Carnicería', icon: '🥩', note: 'Lenguajes', color: '#e53935', items: ['Java ★', 'JavaScript', 'Kotlin', 'Python', 'PHP', 'C / C++', 'HTML5', 'Shell', 'PowerShell'] },
+  { name: 'Frutería', icon: '🥦', note: 'Frameworks', color: '#43a047', items: ['Spring', 'Hibernate', 'JavaFX', 'Symfony', 'AngularJS', 'Bootstrap', 'WordPress'] },
+  { name: 'Lácteos', icon: '🧀', note: 'Datos y cloud', color: '#1e88e5', items: ['MySQL', 'MongoDB', 'SQLite', 'Firebase', 'AWS'] },
+  { name: 'Droguería', icon: '🧰', note: 'Herramientas', color: '#fb8c00', items: ['Git', 'GitHub', 'Bitbucket', 'Jira', 'Docker', 'Apache'] },
+];
+
+// Fachada + mapa de la tienda en un solo bloque para la cabecera del README.
+function renderStore() {
+  const aisles = AISLES.map(
+    (a, n) => `<div class="aisle" style="--c:${a.color}">
+<div class="ah"><span class="num">${n + 1}</span>${a.icon} ${a.name}<small>${a.note}</small></div>
+<div class="shelf">${a.items.map((i) => `<span class="p">${esc(i)}</span>`).join('')}</div></div>`
+  ).join('\n');
   return `<!doctype html><html><head><meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;800;900&display=swap" rel="stylesheet">
 <style>
@@ -194,13 +205,26 @@ body{margin:0;background:transparent;font-family:Rubik,Arial,sans-serif}
 .sign{position:relative;margin:52px 34px 0;background:#ffd400;border-radius:14px;padding:22px 26px;display:flex;align-items:center;gap:22px;
  box-shadow:0 8px 0 #c9a800}
 .cart{font-size:78px;line-height:1}
-.name{position:relative;isolation:isolate;white-space:nowrap;font-weight:900;font-size:58px;line-height:.95;letter-spacing:1px;
- color:#8e24aa;text-shadow:0 2px 0 #4a148c,3px 4px 0 #fff}
+.name{white-space:nowrap;font-weight:900;font-size:58px;line-height:.95;letter-spacing:1px;color:#8e24aa;text-shadow:0 2px 0 #4a148c,3px 4px 0 #fff}
 .tag{font-weight:800;font-size:22px;color:#1a1a1a;margin-top:8px}
 .open{margin-left:auto;text-align:center;border:4px solid #00e676;border-radius:12px;padding:8px 12px;color:#00e676;
  background:#102a1b;font-weight:900;font-size:22px;line-height:1.05;text-shadow:0 0 8px #00e676;box-shadow:0 0 14px #00e676;transform:rotate(4deg)}
 .open small{display:block;font-size:15px;color:#b9f6ca}
-.shelf{display:flex;justify-content:space-around;margin:26px 34px 0;padding:0 0 6px;border-bottom:10px solid #8d5a2b;font-size:38px}
+.map{margin:30px 34px 0;border:4px solid #4a148c;border-radius:14px;padding:16px;
+ background:#fffdf5 repeating-conic-gradient(#f2ead6 0 25%,transparent 0 50%) 0 0/36px 36px}
+.mt{display:flex;justify-content:space-between;align-items:center;font-weight:900;font-size:22px;color:#4a148c;margin:0 4px 12px}
+.mt small{font-weight:500;font-size:14px;color:#555}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.aisle{background:#fff;border-radius:12px;border:3px solid var(--c);overflow:hidden}
+.ah{display:flex;align-items:center;gap:8px;background:var(--c);color:#fff;font-weight:900;font-size:20px;padding:8px 12px}
+.ah small{margin-left:auto;font-weight:500;font-size:13px;opacity:.9}
+.num{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;background:#fff;color:var(--c);font-size:14px}
+.shelf{display:flex;flex-wrap:wrap;gap:6px;padding:12px 12px 10px;border-bottom:8px solid #8d5a2b;min-height:70px;align-content:flex-start}
+.p{background:#faf6ea;border:2px solid var(--c);border-radius:8px;padding:3px 9px;font-weight:800;font-size:15px;color:#1a1a1a}
+.floor{display:flex;justify-content:space-between;align-items:center;margin-top:14px;font-weight:800;font-size:16px}
+.door{background:#4a148c;color:#fff;padding:8px 14px;border-radius:10px}
+.here{color:#e30613}
+.till{background:#ffd400;color:#1a1a1a;padding:8px 14px;border-radius:10px;border:3px solid #1a1a1a}
 .strip{margin-top:22px;background:#4a148c;color:#ffd400;font-weight:800;font-size:20px;letter-spacing:3px;padding:12px 0;text-align:center;white-space:nowrap}
 .strip b{color:#fff}
 </style></head><body><div class="b">
@@ -209,48 +233,13 @@ ${slime(808, 7, { band: 6, min: 10, max: 56, gap: 40 })}
 <div class="sign"><div class="cart">🛒</div>
 <div><div class="name">StickyTM</div><div class="tag">Fullstack Developer · España 🇪🇸</div></div>
 <div class="open">ABIERTO<br>24H<small>siempre</small></div></div>
-<div class="shelf">${shelf}</div>
+<div class="map">
+<div class="mt"><span>🗺️ MAPA DE LA TIENDA</span><small>Todo lo que encontrarás en mis pasillos</small></div>
+<div class="grid">${aisles}</div>
+<div class="floor"><span class="door">🚪 ENTRADA</span><span class="here">📍 Usted está aquí</span><span class="till">🧾 CAJA 01 · ticket abajo ⬇</span></div>
+</div>
 <div class="strip">CÓDIGO FRESCO Y PEGAJOSO <b>·</b> SIEMPRE APRENDIENDO</div>
 </div></body></html>`;
-}
-
-// Lista de la compra (tech stack) escrita a mano en un pósit.
-const SHOPPING_LIST = [
-  ['🥩 Carnicería', ['Java ★', 'JavaScript', 'Kotlin', 'Python', 'PHP', 'C / C++', 'HTML5', 'Shell y PowerShell']],
-  ['🥦 Frutería', ['Spring', 'Hibernate', 'JavaFX', 'Symfony', 'AngularJS', 'Bootstrap', 'WordPress']],
-  ['🧀 Lácteos', ['MySQL', 'MongoDB', 'SQLite', 'Firebase', 'AWS']],
-  ['🧰 Droguería', ['Git y GitHub', 'Bitbucket', 'Jira', 'Docker', 'Apache']],
-];
-
-function renderList() {
-  const sections = SHOPPING_LIST.map(
-    ([title, items]) => `<div class="sec"><h2>${title}</h2>${items.map((i) => `<div class="it"><span class="box">✓</span>${esc(i)}</div>`).join('')}</div>`
-  ).join('\n');
-  return `<!doctype html><html><head><meta charset="utf-8">
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&display=swap" rel="stylesheet">
-<style>
-body{margin:0;background:transparent}
-.wrap{padding:40px 30px 30px;width:760px}
-.note{position:relative;transform:rotate(-1.5deg);padding:92px 40px 36px;color:#2b2b6e;
- font-family:Caveat,"Comic Sans MS",cursive;font-size:27px;
- background:linear-gradient(180deg,#fff27a 0%,#ffe94d 100%);
- box-shadow:0 18px 20px -12px rgba(0,0,0,.45),0 2px 4px rgba(0,0,0,.15)}
-.note:after{content:"";position:absolute;right:0;bottom:0;width:48px;height:48px;
- background:linear-gradient(135deg,#e6cf2f 0 50%,transparent 50%);box-shadow:-3px -3px 6px rgba(0,0,0,.12)}
-.note>.slime{position:absolute;top:2px;left:50%;margin-left:-90px}
-.tape{z-index:1;position:absolute;top:-16px;left:50%;width:150px;height:36px;margin-left:-75px;transform:rotate(2deg);
- background:rgba(255,255,255,.55);box-shadow:0 1px 3px rgba(0,0,0,.15)}
-h1{margin:0 0 14px;font-size:50px;text-align:center;color:#c0262d}
-.cols{display:grid;grid-template-columns:1fr 1fr;gap:6px 40px}
-h2{margin:10px 0 2px;font-size:33px;text-decoration:underline;text-decoration-thickness:2px}
-.it{display:flex;align-items:center;gap:10px;line-height:1.25}
-.box{display:inline-flex;width:20px;height:20px;border:2px solid #2b2b6e;border-radius:4px;align-items:center;justify-content:center;font-size:22px;color:#c0262d}
-.foot{margin-top:18px;text-align:center;font-size:28px;color:#c0262d}
-</style></head><body><div class="wrap"><div class="note">${slime(180, 9, { band: 14, min: 12, max: 52, gap: 34, rounded: true })}<div class="tape"></div>
-<h1>Lista de la compra 🛒</h1>
-<div class="cols">${sections}</div>
-<div class="foot">☐ y mañana… ¡algo nuevo que aprender!</div>
-</div></div></body></html>`;
 }
 
 // Cartel de ofertas: cada estadística es una etiqueta de precio.
@@ -330,15 +319,10 @@ ${slime(808, 11, { band: 8, min: 8, max: 40, gap: 50 })}
   await offers.evaluate(() => document.fonts.ready);
   await offers.locator('.f').screenshot({ path: path.join(OUT, 'ofertas.png'), omitBackground: true });
 
-  const banner = await browser.newPage({ viewport: { width: 840, height: 100 }, deviceScaleFactor: 2 });
-  await banner.setContent(renderBanner(), { waitUntil: 'networkidle' });
-  await banner.evaluate(() => document.fonts.ready);
-  await banner.locator('.b').screenshot({ path: path.join(OUT, 'cabecera.png'), omitBackground: true });
-
-  const list = await browser.newPage({ viewport: { width: 820, height: 100 }, deviceScaleFactor: 2 });
-  await list.setContent(renderList(), { waitUntil: 'networkidle' });
-  await list.evaluate(() => document.fonts.ready);
-  await list.locator('.wrap').screenshot({ path: path.join(OUT, 'lista.png'), omitBackground: true });
+  const store = await browser.newPage({ viewport: { width: 840, height: 100 }, deviceScaleFactor: 2 });
+  await store.setContent(renderStore(), { waitUntil: 'networkidle' });
+  await store.evaluate(() => document.fonts.ready);
+  await store.locator('.b').screenshot({ path: path.join(OUT, 'tienda.png'), omitBackground: true });
   await browser.close();
   console.log('Imágenes generadas en assets/');
 })();

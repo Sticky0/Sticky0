@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/cabecera.png" width="720" alt="Fachada del supermercado StickyTM: Fullstack Developer, España. Abierto 24h"/>
+<img src="assets/tienda.png" width="720" alt="Supermercado StickyTM: fachada y mapa de la tienda con mis lenguajes, frameworks, bases de datos y herramientas"/>
 
 <br/><br/>
 
@@ -14,15 +14,7 @@
 
 <div align="center">
 
-## 📝 Pasillo 1 · Lista de la compra
-
-<sub>Lo que llevo siempre en el carro</sub>
-
-<img src="assets/lista.png" width="560" alt="Pósit con mi lista de la compra: lenguajes, frameworks, bases de datos y herramientas"/>
-
----
-
-## 🏷️ Pasillo 2 · Ofertas de la semana
+## 🏷️ Ofertas de la semana
 
 <sub>Mis estadísticas de GitHub, actualizadas cada día</sub>
 
