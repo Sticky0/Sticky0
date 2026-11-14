@@ -15,6 +15,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   generate:
@@ -42,5 +43,15 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898733+github-actions[bot]@users.noreply.github.com"
           git add -A assets README.md
-          git diff --cached --quiet || git commit -m "Actualizar imágenes del README"
-          git push
+          git diff --cached --quiet && exit 0
+          git commit -m "Actualizar imágenes del README"
+          if [ "$GITHUB_REF_NAME" != "main" ]; then
+            git push
+            exit 0
+          fi
+          git push --force origin HEAD:refs/heads/bot/imagenes
+          if [ -z "$(gh pr list --head bot/imagenes --state open --json number -q '.[0].number')" ]; then
+            gh pr create --base main --head bot/imagenes --title "Actualizar imágenes del README" --body "Imágenes regeneradas por el workflow."
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
