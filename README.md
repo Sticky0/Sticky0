@@ -31,8 +31,8 @@
 
 🛒 **¡Gracias por su visita! Vuelva pronto.** 🛒
 
-<a href="https://www.linkedin.com/in/isaacsanz"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-<a href="https://leetcode.com/isaac-sanz/"><img src="https://img.shields.io/badge/LeetCode-000000?style=for-the-badge&logo=leetcode&logoColor=FFA116" alt="LeetCode"/></a>
-<a href="mailto:isaacsanz@proton.me"><img src="https://img.shields.io/badge/Proton_Mail-6D4AFF?style=for-the-badge&logo=protonmail&logoColor=white" alt="Email"/></a>
+<a href="https://www.linkedin.com/in/isaacsanz"><img src="https://img.shields.io/badge/LinkedIn-7b1fa2?style=for-the-badge&logo=linkedin&logoColor=ffd400" alt="LinkedIn"/></a>
+<a href="https://leetcode.com/isaac-sanz/"><img src="https://img.shields.io/badge/LeetCode-7b1fa2?style=for-the-badge&logo=leetcode&logoColor=ffd400" alt="LeetCode"/></a>
+<a href="mailto:isaacsanz@proton.me"><img src="https://img.shields.io/badge/Proton_Mail-7b1fa2?style=for-the-badge&logo=protonmail&logoColor=ffd400" alt="Email"/></a>
 
 </div>
