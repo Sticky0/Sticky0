@@ -213,12 +213,12 @@ body{margin:0;background:transparent;font-family:Rubik,Arial,sans-serif}
 .b{position:relative;width:820px;margin:10px;border-radius:18px;overflow:hidden;border:6px solid #7b1fa2;background:#fff8e1;box-sizing:border-box}
 .slime{position:absolute;left:0;pointer-events:none}
 .b>.slime{top:78px;z-index:2}
-.awning{height:64px;background:repeating-linear-gradient(90deg,#e30613 0 46px,#fff 46px 92px);position:relative}
+.awning{height:64px;background:repeating-linear-gradient(90deg,#7b1fa2 0 46px,#fff8e1 46px 92px);position:relative}
 .awning:after{content:"";position:absolute;left:0;right:0;bottom:-22px;height:23px;
- background:radial-gradient(circle at 23px 0,#e30613 22px,transparent 23px) 0 0/92px 23px repeat-x,
- radial-gradient(circle at 23px 0,#fff 22px,transparent 23px) 46px 0/92px 23px repeat-x}
-.sign{position:relative;margin:52px 34px 0;background:#ffd400;border-radius:14px;padding:22px 26px;display:flex;align-items:center;gap:22px;
- box-shadow:0 8px 0 #2a0a52}
+ background:radial-gradient(circle at 23px 0,#7b1fa2 22px,transparent 23px) 0 0/92px 23px repeat-x,
+ radial-gradient(circle at 23px 0,#fff8e1 22px,transparent 23px) 46px 0/92px 23px repeat-x}
+.sign{position:relative;margin:52px 34px 0;background:#f3e5f5;border:4px solid #7b1fa2;border-radius:14px;padding:22px 26px;display:flex;align-items:center;gap:22px;
+ box-shadow:0 8px 0 #4a148c}
 .cart{font-size:78px;line-height:1}
 .name{white-space:nowrap;font-weight:900;font-size:58px;line-height:.95;letter-spacing:1px;color:#8e24aa;text-shadow:0 2px 0 #4a148c,3px 4px 0 #fff}
 .tag{font-weight:800;font-size:22px;color:#151716;margin-top:8px}
@@ -238,7 +238,7 @@ body{margin:0;background:transparent;font-family:Rubik,Arial,sans-serif}
 .p{background:#fff8e1;border:2px solid var(--c);border-radius:8px;padding:3px 9px;font-weight:800;font-size:15px;color:#151716}
 .floor{display:flex;justify-content:space-between;align-items:center;margin-top:14px;font-weight:800;font-size:16px}
 .door{background:#4a148c;color:#fff;padding:8px 14px;border-radius:10px}
-.here{color:#e30613}
+.here{color:#7b1fa2}
 .till{background:#ffd400;color:#151716;padding:8px 14px;border-radius:10px;border:3px solid #151716}
 .strip{margin-top:22px;background:#4a148c;color:#ffd400;font-weight:800;font-size:20px;letter-spacing:3px;padding:12px 0;text-align:center;white-space:nowrap}
 .strip b{color:#fff}
@@ -310,21 +310,21 @@ function renderOffers(stats) {
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;800;900&display=swap" rel="stylesheet">
 <style>
 body{margin:0;background:transparent;font-family:Rubik,Arial,sans-serif;font-weight:800}
-.f{position:relative;overflow:hidden;width:820px;margin:10px;background:#ffd400;border:6px solid #7b1fa2;border-radius:18px;padding:62px 24px 26px;box-sizing:border-box;color:#151716}
+.f{position:relative;overflow:hidden;width:820px;margin:10px;background:#fff8e1;border:6px solid #7b1fa2;border-radius:18px;padding:62px 24px 26px;box-sizing:border-box;color:#151716}
 .slime{position:absolute;top:0;left:0;pointer-events:none}
 .top{display:flex;justify-content:space-between;align-items:center}
-h1{margin:0;font-size:40px;color:#e30613;letter-spacing:1px;text-transform:uppercase}
+h1{margin:0;font-size:40px;color:#6a1b9a;letter-spacing:1px;text-transform:uppercase}
 .badge{background:#e30613;color:#fff;font-size:18px;padding:10px 16px;border-radius:50%;transform:rotate(8deg);text-align:center;line-height:1.1}
 .lead{font-weight:500;margin:2px 0 18px}
 .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-.tag{background:#fff;border-radius:10px;padding:10px 12px;border:2px dashed #e30613}
-.n{font-size:13px;color:#e30613}.sub{font-weight:500;font-size:12px;color:#151716}
+.tag{background:#fff;border-radius:10px;padding:10px 12px;border:2px dashed #7b1fa2}
+.n{font-size:13px;color:#7b1fa2}.sub{font-weight:500;font-size:12px;color:#151716}
 .v{font-size:36px;line-height:1.15}.v small{font-size:14px;margin-left:4px}
-h2{font-size:20px;margin:20px 0 8px;color:#e30613}
+h2{font-size:20px;margin:20px 0 8px;color:#6a1b9a}
 .langs{background:#fff;border-radius:10px;padding:12px 16px}
 .lang{display:flex;align-items:center;gap:12px;margin:5px 0;font-weight:500}
 .ln{width:110px}.pct{width:70px;text-align:right}
-.bar{flex:1;height:14px;background:#f3e5f5;border-radius:7px;overflow:hidden}.bar i{display:block;height:100%;background:#e30613}
+.bar{flex:1;height:14px;background:#f3e5f5;border-radius:7px;overflow:hidden}.bar i{display:block;height:100%;background:#7b1fa2}
 </style></head><body><div class="f">
 ${slime(808, 11, { band: 8, min: 8, max: 40, gap: 50 })}
 <div class="top"><h1>🏷️ Ofertas de la semana</h1><div class="badge">¡SOLO<br>HOY!</div></div>
@@ -356,7 +356,7 @@ body{margin:0;background:transparent;font-family:Rubik,Arial,sans-serif}
 .foot{display:flex;align-items:center;justify-content:space-between;margin-top:auto;padding:8px 0 10px}
 .lang{display:flex;align-items:center;gap:6px;font-weight:800;font-size:14px}
 .dot{width:12px;height:12px;border-radius:50%;background:${lang.color};border:1px solid rgba(0,0,0,.2)}
-.price{background:#ffd400;border:2px dashed #e30613;border-radius:8px;padding:3px 10px;font-weight:900;font-size:16px;color:#e30613}
+.price{background:#ffd400;border:2px dashed #7b1fa2;border-radius:8px;padding:3px 10px;font-weight:900;font-size:16px;color:#151716}
 .sticker{position:absolute;right:-6px;top:20px;z-index:3;background:#e30613;color:#fff;font-weight:900;font-size:13px;
  padding:7px 10px;border-radius:50%;transform:rotate(12deg);text-align:center;line-height:1.05;box-shadow:0 2px 4px rgba(0,0,0,.25)}
 .shelf{height:10px;background:#e4b16f;margin:10px 0 0}
