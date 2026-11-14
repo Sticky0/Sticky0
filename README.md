@@ -15,21 +15,21 @@
 
 <br/>
 
-<img src="assets/cartel-ofertas.png" width="300" alt="Pasillo 2: ofertas"/>
+<img src="assets/cartel-ofertas.png" width="300" alt="Pasillo 2: estadísticas"/>
 
-<img src="assets/ofertas.png" width="720" alt="Cartel de ofertas con mis estadísticas de GitHub"/>
-
-<br/>
-
-<img src="assets/cartel-caja.png" width="300" alt="Caja 01: su ticket"/>
+<img src="assets/ofertas.png" width="720" alt="Estadísticas de GitHub"/>
 
 <br/>
 
-<img src="assets/ticket.png" width="360" alt="Ticket de compra con mis lenguajes de GitHub"/>
+<img src="assets/cartel-caja.png" width="300" alt="Caja 01: resumen"/>
 
 <br/>
 
-🛒 **¡Gracias por su visita! Vuelva pronto.** 🛒
+<img src="assets/ticket.png" width="360" alt="Resumen de lenguajes de GitHub"/>
+
+<br/>
+
+**Gracias por su visita.**
 
 <a href="https://www.linkedin.com/in/isaacsanz"><img src="https://img.shields.io/badge/LinkedIn-7b1fa2?style=for-the-badge&logo=linkedin&logoColor=ffd400" alt="LinkedIn"/></a>
 <a href="https://leetcode.com/isaac-sanz/"><img src="https://img.shields.io/badge/LeetCode-7b1fa2?style=for-the-badge&logo=leetcode&logoColor=ffd400" alt="LeetCode"/></a>

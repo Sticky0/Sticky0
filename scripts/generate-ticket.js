@@ -122,9 +122,9 @@ function render({ items, repos, stars, followers }, now) {
     .map((i, n) => `<div class="r"><span>1 ${esc(i.name.toUpperCase())}${n === 0 ? ' ★' : ''}</span><span>${euros(i.cents)}</span></div>`)
     .join('\n');
   const extra = [
-    repos != null && `<div class="r s"><span>REPOSITORIOS EN STOCK</span><span>${repos}</span></div>`,
+    repos != null && `<div class="r s"><span>REPOSITORIOS</span><span>${repos}</span></div>`,
     stars != null && `<div class="r s"><span>ESTRELLAS ACUMULADAS</span><span>${stars} ★</span></div>`,
-    followers != null && `<div class="r s"><span>CLIENTES FIELES</span><span>${followers}</span></div>`,
+    followers != null && `<div class="r s"><span>SEGUIDORES</span><span>${followers}</span></div>`,
   ].filter(Boolean).join('\n');
 
   return `<!doctype html><html><head><meta charset="utf-8"><style>
@@ -140,22 +140,21 @@ hr{border:0;border-top:2px dashed #151716;margin:12px 0}
 </style></head><body><div class="t">
 ${slime(472, 5, { band: 6, min: 8, max: 34, gap: 38 })}
 <div class="c big">🛒 StickyTM</div>
-<div class="c">Productos frescos de código</div>
-<div class="c s">C/ Fullstack, 1 · España<br>Contacto: isaacsanz@proton.me</div>
+<div class="c">Desarrollo de software</div>
+<div class="c s">España<br>Contacto: isaacsanz@proton.me</div>
 <hr>
 <div class="r s"><span>FECHA: ${date}</span><span>HORA: ${time}</span></div>
-<div class="r s"><span>CAJA: 01</span><span>CAJERO: GITHUB ACTIONS</span></div>
+<div class="r s"><span>CAJA: 01</span><span>GENERADO: GITHUB ACTIONS</span></div>
 <hr>
 <div class="r h"><span>CANT DESCRIPCIÓN</span><span>IMPORTE</span></div>
 ${rows}
 <hr>
 <div class="r tot"><span>TOTAL</span><span>100,00 €</span></div>
-<div class="r"><span>PAGADO CON</span><span>WHITE MONSTER 🥤</span></div>
 <hr>
-<div class="r s"><span>ARTÍCULOS: ${items.length}</span><span>IVA INCLUIDO</span></div>
+<div class="r s"><span>LENGUAJES</span><span>${items.length}</span></div>
 ${extra}
 <hr>
-<div class="c">★ ¡GRACIAS POR SU VISITA! ★<br>Vuelva pronto</div>
+<div class="c">GRACIAS POR SU VISITA</div>
 <div class="bar"></div>
 <div class="c s">${code.split('').join(' ')}</div>
 <div class="c s" style="margin-top:8px">github.com/${esc(USER)}</div>
@@ -246,22 +245,21 @@ body{margin:0;background:transparent;font-family:Rubik,Arial,sans-serif}
 <div class="awning"></div>
 ${slime(808, 7, { band: 6, min: 10, max: 56, gap: 40 })}
 <div class="sign"><div class="cart">🛒</div>
-<div><div class="name">StickyTM</div><div class="tag">Fullstack Developer · España 🇪🇸</div></div>
-<div class="open">ABIERTO<br>24H<small>siempre</small></div></div>
+<div><div class="name">StickyTM</div><div class="tag">Fullstack Developer · España</div></div></div>
 <div class="map">
-<div class="mt"><span>🗺️ MAPA DE LA TIENDA</span><small>Todo lo que encontrarás en mis pasillos</small></div>
+<div class="mt"><span>MAPA DE LA TIENDA</span><small>Tecnologías con las que trabajo</small></div>
 <div class="grid">${aisles}</div>
-<div class="floor"><span class="door">🚪 ENTRADA</span><span class="here">📍 Usted está aquí</span><span class="till">🧾 CAJA 01 · ticket abajo ⬇</span></div>
+<div class="floor"><span class="door">ENTRADA</span><span class="till">CAJA 01 · resumen abajo ⬇</span></div>
 </div>
-<div class="strip">CÓDIGO FRESCO Y PEGAJOSO</div>
+<div class="strip">DESARROLLO FULLSTACK</div>
 </div></body></html>`;
 }
 
 // Carteles colgantes que hacen de títulos de sección en el README.
 const SIGNS = [
   { file: 'cartel-destacados.png', top: 'PASILLO 1', text: 'Destacados', icon: '⭐' },
-  { file: 'cartel-ofertas.png', top: 'PASILLO 2', text: 'Ofertas', icon: '🏷️' },
-  { file: 'cartel-caja.png', top: 'CAJA 01', text: 'Su ticket', icon: '🧾' },
+  { file: 'cartel-ofertas.png', top: 'PASILLO 2', text: 'Estadísticas', icon: '📊' },
+  { file: 'cartel-caja.png', top: 'CAJA 01', text: 'Resumen', icon: '🧾' },
 ];
 
 function renderSign({ top, text, icon }, n) {
@@ -290,16 +288,16 @@ ${slime(300, 40 + n, { band: 6, min: 6, max: 34, gap: 60, rounded: true })}</div
 function renderOffers(stats) {
   const fmt = (n) => (n == null ? '—' : new Intl.NumberFormat('es-ES').format(n));
   const tags = [
-    ['CONTRIBUCIONES', 'último año', stats.contributions, 'uds'],
-    ['COMMITS', 'último año', stats.commits, 'uds'],
-    ['RACHA ACTUAL', 'sin parar', stats.currentStreak, stats.currentStreak === 1 ? 'día' : 'días'],
+    ['CONTRIBUCIONES', 'último año', stats.contributions, ''],
+    ['COMMITS', 'último año', stats.commits, ''],
+    ['RACHA ACTUAL', 'en curso', stats.currentStreak, stats.currentStreak === 1 ? 'día' : 'días'],
     ['RACHA MÁXIMA', 'último año', stats.longestStreak, stats.longestStreak === 1 ? 'día' : 'días'],
-    ['PULL REQUESTS', 'total', stats.prs, 'uds'],
-    ['ISSUES', 'total', stats.issues, 'uds'],
+    ['PULL REQUESTS', 'total', stats.prs, ''],
+    ['ISSUES', 'total', stats.issues, ''],
     ['ESTRELLAS', 'en mis repos', stats.stars, '★'],
-    ['REPOSITORIOS', 'en stock', stats.repos, 'uds'],
+    ['REPOSITORIOS', 'propios', stats.repos, ''],
   ]
-    .map(([name, sub, value, unit]) => `<div class="tag"><div class="n">${name}</div><div class="v">${fmt(value)}<small>${unit}</small></div><div class="sub">${sub}</div></div>`)
+    .map(([name, sub, value, unit]) => `<div class="tag"><div class="n">${name}</div><div class="v">${fmt(value)}${unit ? `<small>${unit}</small>` : ''}</div><div class="sub">${sub}</div></div>`)
     .join('\n');
   const bars = toItems(stats.languages)
     .slice(0, 5)
@@ -327,10 +325,10 @@ h2{font-size:20px;margin:20px 0 8px;color:#6a1b9a}
 .bar{flex:1;height:14px;background:#f3e5f5;border-radius:7px;overflow:hidden}.bar i{display:block;height:100%;background:#7b1fa2}
 </style></head><body><div class="f">
 ${slime(808, 11, { band: 8, min: 8, max: 40, gap: 50 })}
-<div class="top"><h1>🏷️ Ofertas de la semana</h1><div class="badge">¡SOLO<br>HOY!</div></div>
-<div class="lead">Estadísticas frescas de github.com/${esc(USER)}</div>
+<div class="top"><h1>Estadísticas de GitHub</h1></div>
+<div class="lead">Datos públicos de github.com/${esc(USER)}</div>
 <div class="grid">${tags}</div>
-<h2>🥇 LOS MÁS VENDIDOS (lenguajes)</h2>
+<h2>LENGUAJES MÁS USADOS</h2>
 <div class="langs">${bars}</div>
 </div></body></html>`;
 }
@@ -338,7 +336,7 @@ ${slime(808, 11, { band: 8, min: 8, max: 40, gap: 50 })}
 // Repo pineado como producto destacado en la estantería.
 function renderPinned(repo, n) {
   const lang = repo.primaryLanguage || { name: 'Código', color: '#8e24aa' };
-  const desc = repo.description || 'Producto artesanal, sin descripción en la etiqueta.';
+  const desc = repo.description || 'Sin descripción.';
   return `<!doctype html><html><head><meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;800;900&display=swap" rel="stylesheet">
 <style>
@@ -362,9 +360,8 @@ body{margin:0;background:transparent;font-family:Rubik,Arial,sans-serif}
 .shelf{height:10px;background:#e4b16f;margin:10px 0 0}
 </style></head><body><div class="c">
 ${slime(388, 20 + n, { band: 6, min: 6, max: 24, gap: 40 })}
-<div class="sticker">⭐ TOP<br>VENTAS</div>
 <div class="box"><div class="band"></div><div class="in">
-<div class="k">PRODUCTO DESTACADO Nº${n}</div>
+<div class="k">REPOSITORIO DESTACADO Nº${n}</div>
 <div class="name">${esc(repo.name)}</div>
 <div class="desc">${esc(desc)}</div>
 <div class="foot"><span class="lang"><span class="dot"></span>${esc(lang.name)}</span>
