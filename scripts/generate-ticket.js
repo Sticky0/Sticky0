@@ -128,15 +128,15 @@ function render({ items, repos, stars, followers }, now) {
   ].filter(Boolean).join('\n');
 
   return `<!doctype html><html><head><meta charset="utf-8"><style>
-body{margin:0;background:#e9e4da;display:flex;justify-content:center;padding:40px 0}
-.t{position:relative;overflow:hidden;width:420px;background:#fffef9;padding:64px 26px 36px;font-family:"Courier New",Courier,monospace;font-size:15px;color:#222;
+body{margin:0;background:#f3e5f5;display:flex;justify-content:center;padding:40px 0}
+.t{position:relative;overflow:hidden;width:420px;background:#fff8e1;padding:64px 26px 36px;font-family:"Courier New",Courier,monospace;font-size:15px;color:#151716;
  -webkit-mask:conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/18px 100% repeat-x}
 .c{text-align:center}.big{font-size:24px;font-weight:bold;letter-spacing:2px;color:#6a1b9a}
 .slime{position:absolute;top:0;left:0}
-hr{border:0;border-top:2px dashed #555;margin:12px 0}
+hr{border:0;border-top:2px dashed #151716;margin:12px 0}
 .r{display:flex;justify-content:space-between;margin:3px 0}
-.h{font-weight:bold}.tot{font-size:20px;font-weight:bold}.s{font-size:12px;color:#444}
-.bar{height:56px;margin:14px auto 4px;width:300px;background:repeating-linear-gradient(90deg,#000 0 2px,#fffef9 2px 4px,#000 4px 5px,#fffef9 5px 8px,#000 8px 11px,#fffef9 11px 12px,#000 12px 13px,#fffef9 13px 16px)}
+.h{font-weight:bold}.tot{font-size:20px;font-weight:bold}.s{font-size:12px;color:#151716}
+.bar{height:56px;margin:14px auto 4px;width:300px;background:repeating-linear-gradient(90deg,#151716 0 2px,#fff8e1 2px 4px,#151716 4px 5px,#fff8e1 5px 8px,#151716 8px 11px,#fff8e1 11px 12px,#151716 12px 13px,#fff8e1 13px 16px)}
 </style></head><body><div class="t">
 ${slime(472, 5, { band: 6, min: 8, max: 34, gap: 38 })}
 <div class="c big">🛒 StickyTM</div>
@@ -193,16 +193,16 @@ ${rounded ? '' : `<rect x="0" y="3" width="${width}" height="3" fill="#fff" opac
 
 // Pasillos del supermercado (tech stack): cada sección del mapa con su color.
 const AISLES = [
-  { name: 'Carnicería', icon: '🥩', note: 'Lenguajes', color: '#e53935', items: ['Java ★', 'JavaScript', 'Kotlin', 'Python', 'PHP', 'C / C++', 'HTML5', 'Shell', 'PowerShell'] },
-  { name: 'Frutería', icon: '🥦', note: 'Frameworks', color: '#43a047', items: ['Spring', 'Hibernate', 'JavaFX', 'Symfony', 'AngularJS', 'Bootstrap', 'WordPress'] },
-  { name: 'Lácteos', icon: '🧀', note: 'Datos y cloud', color: '#1e88e5', items: ['MySQL', 'MongoDB', 'SQLite', 'Firebase', 'AWS'] },
-  { name: 'Droguería', icon: '🧰', note: 'Herramientas', color: '#fb8c00', items: ['Git', 'GitHub', 'Bitbucket', 'Jira', 'Docker', 'Apache'] },
+  { name: 'Carnicería', icon: '🥩', note: 'Lenguajes', color: '#7b1fa2', ink: '#fff8e1', items: ['Java ★', 'JavaScript', 'Kotlin', 'Python', 'PHP', 'C / C++', 'HTML5', 'Shell', 'PowerShell'] },
+  { name: 'Frutería', icon: '🥦', note: 'Frameworks', color: '#a6c034', ink: '#151716', items: ['Spring', 'Hibernate', 'JavaFX', 'Symfony', 'AngularJS', 'Bootstrap', 'WordPress'] },
+  { name: 'Lácteos', icon: '🧀', note: 'Datos y cloud', color: '#3f728f', ink: '#fff', items: ['MySQL', 'MongoDB', 'SQLite', 'Firebase', 'AWS'] },
+  { name: 'Droguería', icon: '🧰', note: 'Herramientas', color: '#f08a24', ink: '#151716', items: ['Git', 'GitHub', 'Bitbucket', 'Jira', 'Docker', 'Apache'] },
 ];
 
 // Fachada + mapa de la tienda en un solo bloque para la cabecera del README.
 function renderStore() {
   const aisles = AISLES.map(
-    (a, n) => `<div class="aisle" style="--c:${a.color}">
+    (a, n) => `<div class="aisle" style="--c:${a.color};--i:${a.ink}">
 <div class="ah"><span class="num">${n + 1}</span>${a.icon} ${a.name}<small>${a.note}</small></div>
 <div class="shelf">${a.items.map((i) => `<span class="p">${esc(i)}</span>`).join('')}</div></div>`
   ).join('\n');
@@ -218,28 +218,28 @@ body{margin:0;background:transparent;font-family:Rubik,Arial,sans-serif}
  background:radial-gradient(circle at 23px 0,#e30613 22px,transparent 23px) 0 0/92px 23px repeat-x,
  radial-gradient(circle at 23px 0,#fff 22px,transparent 23px) 46px 0/92px 23px repeat-x}
 .sign{position:relative;margin:52px 34px 0;background:#ffd400;border-radius:14px;padding:22px 26px;display:flex;align-items:center;gap:22px;
- box-shadow:0 8px 0 #c9a800}
+ box-shadow:0 8px 0 #2a0a52}
 .cart{font-size:78px;line-height:1}
 .name{white-space:nowrap;font-weight:900;font-size:58px;line-height:.95;letter-spacing:1px;color:#8e24aa;text-shadow:0 2px 0 #4a148c,3px 4px 0 #fff}
-.tag{font-weight:800;font-size:22px;color:#1a1a1a;margin-top:8px}
-.open{margin-left:auto;text-align:center;border:4px solid #00e676;border-radius:12px;padding:8px 12px;color:#00e676;
- background:#102a1b;font-weight:900;font-size:22px;line-height:1.05;text-shadow:0 0 8px #00e676;box-shadow:0 0 14px #00e676;transform:rotate(4deg)}
-.open small{display:block;font-size:15px;color:#b9f6ca}
+.tag{font-weight:800;font-size:22px;color:#151716;margin-top:8px}
+.open{margin-left:auto;text-align:center;border:4px solid #a6c034;border-radius:12px;padding:8px 12px;color:#a6c034;
+ background:#1b0a2e;font-weight:900;font-size:22px;line-height:1.05;text-shadow:0 0 8px #a6c034;box-shadow:0 0 14px #a6c034;transform:rotate(4deg)}
+.open small{display:block;font-size:15px;color:#fff8e1}
 .map{margin:30px 34px 0;border:4px solid #4a148c;border-radius:14px;padding:16px;
- background:#fffdf5 repeating-conic-gradient(#f2ead6 0 25%,transparent 0 50%) 0 0/36px 36px}
+ background:#fff8e1 repeating-conic-gradient(#f3e5f5 0 25%,transparent 0 50%) 0 0/36px 36px}
 .mt{display:flex;justify-content:space-between;align-items:center;font-weight:900;font-size:22px;color:#4a148c;margin:0 4px 12px}
-.mt small{font-weight:500;font-size:14px;color:#555}
+.mt small{font-weight:500;font-size:14px;color:#151716}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .aisle{background:#fff;border-radius:12px;border:3px solid var(--c);overflow:hidden}
-.ah{display:flex;align-items:center;gap:8px;background:var(--c);color:#fff;font-weight:900;font-size:20px;padding:8px 12px}
+.ah{display:flex;align-items:center;gap:8px;background:var(--c);color:var(--i);font-weight:900;font-size:20px;padding:8px 12px}
 .ah small{margin-left:auto;font-weight:500;font-size:13px;opacity:.9}
 .num{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;background:#fff;color:var(--c);font-size:14px}
-.shelf{display:flex;flex-wrap:wrap;gap:6px;padding:12px 12px 10px;border-bottom:8px solid #8d5a2b;min-height:70px;align-content:flex-start}
-.p{background:#faf6ea;border:2px solid var(--c);border-radius:8px;padding:3px 9px;font-weight:800;font-size:15px;color:#1a1a1a}
+.shelf{display:flex;flex-wrap:wrap;gap:6px;padding:12px 12px 10px;border-bottom:8px solid #e4b16f;min-height:70px;align-content:flex-start}
+.p{background:#fff8e1;border:2px solid var(--c);border-radius:8px;padding:3px 9px;font-weight:800;font-size:15px;color:#151716}
 .floor{display:flex;justify-content:space-between;align-items:center;margin-top:14px;font-weight:800;font-size:16px}
 .door{background:#4a148c;color:#fff;padding:8px 14px;border-radius:10px}
 .here{color:#e30613}
-.till{background:#ffd400;color:#1a1a1a;padding:8px 14px;border-radius:10px;border:3px solid #1a1a1a}
+.till{background:#ffd400;color:#151716;padding:8px 14px;border-radius:10px;border:3px solid #151716}
 .strip{margin-top:22px;background:#4a148c;color:#ffd400;font-weight:800;font-size:20px;letter-spacing:3px;padding:12px 0;text-align:center;white-space:nowrap}
 .strip b{color:#fff}
 </style></head><body><div class="b">
@@ -271,10 +271,10 @@ function renderSign({ top, text, icon }, n) {
 body{margin:0;background:transparent;font-family:Rubik,Arial,sans-serif}
 .w{width:440px;padding:0 20px 50px;box-sizing:border-box;display:flex;flex-direction:column;align-items:center}
 .chains{display:flex;justify-content:space-between;width:260px;height:46px}
-.chains i{width:6px;height:46px;background:repeating-linear-gradient(180deg,#9e9e9e 0 7px,#616161 7px 9px,transparent 9px 11px);border-radius:3px}
+.chains i{width:6px;height:46px;background:repeating-linear-gradient(180deg,#ce93d8 0 7px,#6a1b9a 7px 9px,transparent 9px 11px);border-radius:3px}
 .s{position:relative;width:360px;background:#4a148c;border:5px solid #ffd400;border-radius:16px;padding:12px 18px 16px;
  box-sizing:border-box;text-align:center;box-shadow:0 10px 18px -6px rgba(0,0,0,.45);transform:rotate(-1.5deg)}
-.s:before,.s:after{content:"";position:absolute;top:8px;width:12px;height:12px;border-radius:50%;background:#ffd400;border:2px solid #8a6d00}
+.s:before,.s:after{content:"";position:absolute;top:8px;width:12px;height:12px;border-radius:50%;background:#ffd400;border:2px solid #151716}
 .s:before{left:44px}.s:after{right:44px}
 .top{display:inline-block;background:#ffd400;color:#4a148c;font-weight:900;font-size:15px;letter-spacing:3px;padding:3px 12px;border-radius:20px}
 .t{white-space:nowrap;color:#fff;font-weight:900;font-size:36px;line-height:1.1;margin-top:8px;text-transform:uppercase;letter-spacing:1px;text-shadow:0 3px 0 #2a0a52}
@@ -310,7 +310,7 @@ function renderOffers(stats) {
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;800;900&display=swap" rel="stylesheet">
 <style>
 body{margin:0;background:transparent;font-family:Rubik,Arial,sans-serif;font-weight:800}
-.f{position:relative;overflow:hidden;width:820px;margin:10px;background:#ffd400;border:6px solid #7b1fa2;border-radius:18px;padding:62px 24px 26px;box-sizing:border-box;color:#1a1a1a}
+.f{position:relative;overflow:hidden;width:820px;margin:10px;background:#ffd400;border:6px solid #7b1fa2;border-radius:18px;padding:62px 24px 26px;box-sizing:border-box;color:#151716}
 .slime{position:absolute;top:0;left:0;pointer-events:none}
 .top{display:flex;justify-content:space-between;align-items:center}
 h1{margin:0;font-size:40px;color:#e30613;letter-spacing:1px;text-transform:uppercase}
@@ -318,13 +318,13 @@ h1{margin:0;font-size:40px;color:#e30613;letter-spacing:1px;text-transform:upper
 .lead{font-weight:500;margin:2px 0 18px}
 .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
 .tag{background:#fff;border-radius:10px;padding:10px 12px;border:2px dashed #e30613}
-.n{font-size:13px;color:#e30613}.sub{font-weight:500;font-size:12px;color:#555}
+.n{font-size:13px;color:#e30613}.sub{font-weight:500;font-size:12px;color:#151716}
 .v{font-size:36px;line-height:1.15}.v small{font-size:14px;margin-left:4px}
 h2{font-size:20px;margin:20px 0 8px;color:#e30613}
 .langs{background:#fff;border-radius:10px;padding:12px 16px}
 .lang{display:flex;align-items:center;gap:12px;margin:5px 0;font-weight:500}
 .ln{width:110px}.pct{width:70px;text-align:right}
-.bar{flex:1;height:14px;background:#f1f1f1;border-radius:7px;overflow:hidden}.bar i{display:block;height:100%;background:#e30613}
+.bar{flex:1;height:14px;background:#f3e5f5;border-radius:7px;overflow:hidden}.bar i{display:block;height:100%;background:#e30613}
 </style></head><body><div class="f">
 ${slime(808, 11, { band: 8, min: 8, max: 40, gap: 50 })}
 <div class="top"><h1>🏷️ Ofertas de la semana</h1><div class="badge">¡SOLO<br>HOY!</div></div>
@@ -351,15 +351,15 @@ body{margin:0;background:transparent;font-family:Rubik,Arial,sans-serif}
 .band{background:${lang.color};height:14px}
 .in{padding:10px 14px 0;flex:1;display:flex;flex-direction:column}
 .k{font-size:12px;font-weight:800;color:#7b1fa2;letter-spacing:2px}
-.name{font-weight:900;font-size:24px;color:#1a1a1a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin:2px 0 6px}
-.desc{font-weight:500;font-size:14px;color:#444;line-height:1.3;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.name{font-weight:900;font-size:24px;color:#151716;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin:2px 0 6px}
+.desc{font-weight:500;font-size:14px;color:#151716;line-height:1.3;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .foot{display:flex;align-items:center;justify-content:space-between;margin-top:auto;padding:8px 0 10px}
 .lang{display:flex;align-items:center;gap:6px;font-weight:800;font-size:14px}
 .dot{width:12px;height:12px;border-radius:50%;background:${lang.color};border:1px solid rgba(0,0,0,.2)}
 .price{background:#ffd400;border:2px dashed #e30613;border-radius:8px;padding:3px 10px;font-weight:900;font-size:16px;color:#e30613}
 .sticker{position:absolute;right:-6px;top:20px;z-index:3;background:#e30613;color:#fff;font-weight:900;font-size:13px;
  padding:7px 10px;border-radius:50%;transform:rotate(12deg);text-align:center;line-height:1.05;box-shadow:0 2px 4px rgba(0,0,0,.25)}
-.shelf{height:10px;background:#8d5a2b;margin:10px 0 0}
+.shelf{height:10px;background:#e4b16f;margin:10px 0 0}
 </style></head><body><div class="c">
 ${slime(388, 20 + n, { band: 6, min: 6, max: 24, gap: 40 })}
 <div class="sticker">⭐ TOP<br>VENTAS</div>
